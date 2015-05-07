@@ -1,0 +1,669 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"css",
+				"css	.css() - single"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"logo",
+				"logo-img"
+			],
+			[
+				"change",
+				"changeImage"
+			],
+			[
+				"chan",
+				"changeImage"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"z",
+				"z	z-index"
+			],
+			[
+				"mmenus",
+				"mmenuSecHovered"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"re",
+				"ready	document.ready - $(function(){})"
+			],
+			[
+				"rea",
+				"ready	$(document).ready"
+			],
+			[
+				"at",
+				"attr	.attr() - single"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"template",
+				"templateUrl"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"mme",
+				"mmenuSecHovered"
+			],
+			[
+				"has",
+				"hasClass	.hasClass()"
+			],
+			[
+				"un",
+				"unbind	.unbind()"
+			],
+			[
+				"toggle",
+				"toggleClass	.toggleClass()"
+			],
+			[
+				"clas",
+				"className"
+			],
+			[
+				"conte",
+				"contenido"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"con",
+				"contenido"
+			],
+			[
+				"mm",
+				"mmenuSecHovered"
+			],
+			[
+				"mouse",
+				"mouseleave	.mouseleave()"
+			],
+			[
+				"slide",
+				"slideDown	.slideDown()"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"select",
+				"selectpicker"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"col-",
+				"col-sm-7"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"o",
+				"overflow"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"br",
+				"border-bottom"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"remo",
+				"removeClass	.removeClass()"
+			],
+			[
+				"add",
+				"addClass	.addClass()"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"back",
+				"backgroundColor"
+			],
+			[
+				"c",
+				"css	.css() - single"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 265.0,
+		"selected_items":
+		[
+			[
+				"form",
+				"Format CSS: Expanded"
+			],
+			[
+				"css",
+				"Format CSS: Expanded (Break Selectors)"
+			],
+			[
+				"sf",
+				"SFTP: Browse Server…"
+			],
+			[
+				"sftp",
+				"SFTP: Browse Server…"
+			],
+			[
+				"ftp",
+				"SFTP: Browse Server…"
+			],
+			[
+				"sfto",
+				"SFTP: Browse Server…"
+			],
+			[
+				"sft",
+				"SFTP: Browse Server…"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"fon",
+				"Format CSS: Expanded"
+			],
+			[
+				"fo",
+				"Format CSS: Expanded"
+			],
+			[
+				"html",
+				"TidyHTML"
+			],
+			[
+				"",
+				"Dummy Image: Insert Image"
+			],
+			[
+				"for",
+				"Format CSS: Expanded"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"tidy",
+				"TidyHTML"
+			],
+			[
+				"reid",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"commi",
+				"Git: Commit"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"git sta",
+				"Git: Status"
+			],
+			[
+				"git",
+				"Git: Commit"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/sanremo/fonts/stylesheet.css",
+		"/C/Users/eon2/Downloads/sb-admin-angular-master/sb-admin-angular-master/bower.json",
+		"/C/Users/eon2/Downloads/AdminLTE-2.0.5/AdminLTE-2.0.5/dist/js/app.js",
+		"/C/Users/eon2/Downloads/sb-admin-angular-master/sb-admin-angular-master/app/scripts/app.js",
+		"/C/Users/eon2/Downloads/sb-admin-angular-master/sb-admin-angular-master/app/js/sb-admin-2.js",
+		"/C/Users/eon2/Downloads/rdash-angular-master/rdash-angular-master/gulpfile.js",
+		"/C/xampp/htdocs/travelTale/index.php",
+		"/C/xampp/htdocs/sanremo/grid.html",
+		"/C/xampp/htdocs/sanremo/mapa.html",
+		"/C/xampp/htdocs/sanremo/mapa2.html",
+		"/C/xampp/htdocs/sanremo/microsite.html",
+		"/C/xampp/htdocs/sanremo/news.html",
+		"/C/xampp/htdocs/sanremo/services.html",
+		"/C/xampp/htdocs/sanremo/comoLlegar.html",
+		"/C/xampp/htdocs/sanremo/css/responsive.css",
+		"/C/xampp/htdocs/sanremo/css/css.comoLlegar.css",
+		"/C/xampp/htdocs/sanremo/css/css.css",
+		"/C/xampp/htdocs/sanremo/index.html",
+		"/C/xampp/htdocs/sanremo/css/css.news.css",
+		"/C/Users/eon2/Documents/datosTrabajo",
+		"/C/Users/eon2/AppData/Local/Temp/fz3temp-1/wp-config.php",
+		"/C/Users/eon2/AppData/Local/Temp/fz3temp-1/index.php",
+		"/C/xampp/htdocs/sanremo/css/css.microsite.css",
+		"/C/xampp/htdocs/sanremo/css/css.grid.css",
+		"/C/xampp/htdocs/sanremo/css/css.mapa.css",
+		"/C/xampp/htdocs/sanremo/js/js.microsite.js",
+		"/C/xampp/htdocs/sanremo/js/js.mapa.js",
+		"/C/xampp/htdocs/sanremo/css/bootstrap.min.css",
+		"/C/xampp/htdocs/sanremo/js/js.js",
+		"/C/xampp/htdocs/sanremo/js/js.grid.js",
+		"/C/Users/eon2/Downloads/working.php",
+		"/C/xampp/htdocs/sanremo/images/Offers-logo.png",
+		"/C/xampp/htdocs/sanremo/sftp-config.json",
+		"/C/xampp/htdocs/sanremoOn/index.html",
+		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429739555/esedigital/var/www/doffice.com.mx/sanremoOn/css/css.css",
+		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429804174/esedigital/var/www/doffice.com.mx/sanremoOn/css/responsive.css",
+		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429795359/esedigital/var/www/doffice.com.mx/sanremoOn/index.html",
+		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429801138/esedigital/var/www/doffice.com.mx/sanremoOn/grid.html",
+		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429803376/esedigital/var/www/doffice.com.mx/sanremoOn/css/css.grid.css",
+		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429796066/esedigital/var/www/doffice.com.mx/sanremoOn/js/js.js",
+		"/C/Users/eon2/Downloads/ui-bootstrap-tpls-0.12.1.js",
+		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429738632/esedigital/var/www/doffice.com.mx/sanremoOn/grid.html",
+		"/C/xampp/htdocs/sanremoOn/css/css.css",
+		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429731004/esedigital/var/www/doffice.com.mx/sanremoOn/css/css.css",
+		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429731125/esedigital/var/www/doffice.com.mx/sanremoOn/js/js.js",
+		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429731253/esedigital/var/www/doffice.com.mx/sanremoOn/index.html",
+		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429731174/esedigital/var/www/doffice.com.mx/sanremoOn/css/responsive.css",
+		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429735333/esedigital/var/www/doffice.com.mx/sanremoOn/grid.html",
+		"/C/xampp/htdocs/sanremoOn/js/js.js",
+		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429724088/esedigital/var/www/doffice.com.mx/sanremoOn/css/css.css",
+		"/C/Users/eon2/Downloads/TarjetaBancomer",
+		"/C/Users/eon2/AppData/Roaming/Sublime Text 2/Packages/User/sftp_servers/esedigital",
+		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429648939/esedigital/var/www/doffice.com.mx/sanremoOn/css/css.css",
+		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429651817/esedigital/var/www/doffice.com.mx/sanremoOn/index.html",
+		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429650815/esedigital/var/www/doffice.com.mx/sanremoOn/css/css.grid.css",
+		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429648973/esedigital/var/www/doffice.com.mx/sanremoOn/css/responsive.css",
+		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429652220/esedigital/var/www/doffice.com.mx/sanremoOn/js/retina.js",
+		"/C/demo/www/css/style.css",
+		"/C/Users/eon2/AppData/Local/Temp/fz3temp-1/css.css",
+		"/C/Users/eon2/AppData/Local/Temp/fz3temp-1/responsive.css",
+		"/C/Users/eon2/Downloads/retina-1.3.0/retina.js",
+		"/C/xampp/htdocs/sanremoOn/css/css.grid.css",
+		"/C/xampp/htdocs/sanremoOn/css/responsive.css",
+		"/C/Users/eon2/Downloads/ngbp-0.3.2-release/ngbp-0.3.2-release/karma/karma-unit.tpl.js",
+		"/C/xampp/htdocs/sanremoOn/fonts/stylesheet.css",
+		"/C/xampp/htdocs/sanremoOn/js/js.grid.js",
+		"/C/xampp/htdocs/sanremoOn/comoLlegar.html",
+		"/C/xampp/htdocs/sanremoOn/grid.html",
+		"/C/xampp/htdocs/sanremoOn/mapa.html",
+		"/C/xampp/htdocs/sanremoOn/mapa2.html",
+		"/C/xampp/htdocs/sanremoOn/microsite.html",
+		"/C/xampp/htdocs/sanremoOn/news.html",
+		"/C/Users/eon2/AppData/Roaming/Skype/My Skype Received Files/retina.css",
+		"/C/xampp/htdocs/lord/js/main.js",
+		"/C/xampp/htdocs/website/index.html",
+		"/C/xampp/htdocs/lord/index.html",
+		"/C/xampp/htdocs/lord/clases/class.correo.php",
+		"/C/xampp/htdocs/lord/clases/sendMail.php",
+		"/C/xampp/htdocs/lord/sitemap.xml",
+		"/C/xampp/htdocs/lord/clases/index.html",
+		"/C/xampp/htdocs/lord/.htaccess",
+		"/C/xampp/htdocs/lord/module/Administrador/config/module.config.php",
+		"/C/xampp/htdocs/lord/module/Application/config/module.config.php",
+		"/C/Users/eon2/Downloads/appponsive-portfolio-landing-page/AppPonsive/css/main.css",
+		"/C/Users/eon2/Downloads/appponsive-portfolio-landing-page/AppPonsive/index.html",
+		"/C/Users/eon2/Downloads/Boostrap-Social-Buttons-master/Boostrap-Social-Buttons-master/social-sharing-buttons.css",
+		"/C/Users/eon2/Downloads/Boostrap-Social-Buttons-master/Boostrap-Social-Buttons-master/index.html",
+		"/C/Users/eon2/Downloads/Boostrap-Social-Buttons-master/Boostrap-Social-Buttons-master/css/social-sharing-buttons.css",
+		"/C/Users/eon2/Downloads/Boostrap-Social-Buttons-master/Boostrap-Social-Buttons-master/css/social-sharing-buttons-codes.css",
+		"/C/Users/eon2/Downloads/Boostrap-Social-Buttons-master/Boostrap-Social-Buttons-master/css/animation.css",
+		"/C/demo/www/templates/gestionCalendarios.html",
+		"/C/demo/www/templates/calendario.html",
+		"/C/demo/www/templates/cal.html",
+		"/C/demo/www/templates/tuTurno.html",
+		"/C/demo/www/templates/tabs.html",
+		"/C/demo/www/js/app.js",
+		"/C/demo/www/js/controllers.js",
+		"/C/demo/www/templates/usuario.html",
+		"/C/demo/www/templates/tab-dash.html",
+		"/C/demo/www/templates/cambioDeTurno.html",
+		"/C/demo/www/js/services.js",
+		"/C/text/www/js/app.js",
+		"/C/text/www/js/controllers.js",
+		"/C/demo/www/templates/tab-user.html",
+		"/C/demo/www/templates/modUser.html",
+		"/C/demo/www/templates/tab-clock.html",
+		"/C/demo/www/index.html",
+		"/C/Users/eon2/Downloads/open_sans_light/Open_Sans_Light/stylesheet.css",
+		"/C/demo/platforms/android/AndroidManifest.xml",
+		"/C/demo/platforms/android/cordova/lib/device.js",
+		"/C/testapp/www/js/controllers.js",
+		"/C/testapp/www/js/app.js",
+		"/C/testapp/www/index.html",
+		"/C/demo/platforms/android/cordova/run.bat",
+		"/C/demo/gulpfile.js",
+		"/C/testapp/www/css/style.css",
+		"/C/xampp/htdocs/sanremoOn/css/css.news.css",
+		"/C/xampp/htdocs/sanremoOn/js/js.news.js",
+		"/C/xampp/htdocs/sanremoOn/css/css.mapa.css",
+		"/C/Users/eon2/Documents/Nueva carpeta/motoGm/pages/etiquetas/es.js",
+		"/C/Users/eon2/Downloads/EberJob/DESIGN.zip",
+		"/C/Users/eon2/AppData/Local/Temp/fz3temp-1/php.php",
+		"/C/xampp/htdocs/sanremoOn/js/js.microsite.js",
+		"/C/xampp/htdocs/sanremoOn/css/css.microsite.css",
+		"/C/Users/eon2/AppData/Local/Temp/fz3temp-1/.htaccess",
+		"/C/Users/eon2/Downloads/7e21a921-aa7a-422c-9ae0-52e6cffbd37c.xml",
+		"/C/xampp/htdocs/sanremoOn/js/js.mapa.js",
+		"/C/Users/eon2/Downloads/jQuery.mmenu-master/jQuery.mmenu-master/demo/default.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"shop",
+			"Come raggiungere Sanremo",
+			"role",
+			"aeropuerto",
+			"Imagen-2",
+			"Image-4",
+			"imagen-noticia.png",
+			"textoB",
+			"<span class=\"gris fecha\">24-07-2015</span>",
+			"<span class=\"gris fecha\">",
+			"att",
+			"news",
+			"att",
+			"orange",
+			"password",
+			"hidden-xs",
+			" fecha",
+			"</strong>",
+			"<strong>",
+			"24-07-2015",
+			"visible-xs",
+			"images/news.png",
+			"in san",
+			"registrati",
+			"new",
+			"news",
+			"new",
+			"media",
+			"Javier Bilbao Canalejas: ",
+			"come",
+			"true",
+			"Javier Bilbao Canalejas:",
+			"Imagen-",
+			"Javier Bilbao Canalejas:",
+			"<img src=\"images/Offers-logo.png\" alt=\"\">",
+			"logo",
+			"loc",
+			"logoMarker",
+			"</i>",
+			"barramenu",
+			"login",
+			"ESTILO",
+			"cuerpo",
+			"fav",
+			"hear",
+			"corazon",
+			"auto",
+			"mapa",
+			"go",
+			"g",
+			"mapa",
+			">\n",
+			"\\+",
+			"+",
+			"+5",
+			"#848484",
+			"png",
+			".slider-principal",
+			" .",
+			"login",
+			"}\n",
+			"orange",
+			"col-xs-3",
+			"col-sm-3",
+			"mm",
+			"menubo",
+			"menubotoo",
+			"menubotooom",
+			"menubootom",
+			"menuboton",
+			"Javier Bilbao Canalejas:",
+			"spec",
+			"sp",
+			"spet",
+			"spe",
+			"Javier Bilbao Canalejas:",
+			".membership:hover .usuarioIcono {\n    background: url(\"../images/Login-orange.png\") repeat scroll 0 0 rgba(0, 0, 0, 0);\n.usuarioIcono",
+			".membership:hover .usuarioIcono {\n    background: url(\"../images/Login-orange.png\") repeat scroll 0 0 rgba(0, 0, 0, 0);\nusuarioIcono",
+			".logo",
+			"visible",
+			"logo",
+			"header-container",
+			"display:none",
+			"#navigation",
+			"ParkingCONOSCI",
+			"cono",
+			"conozi",
+			"col-sm-3",
+			"href=\"#\"",
+			"mem",
+			"p",
+			"<i class=\"fa",
+			"\"mm\"",
+			"negozi",
+			"png",
+			"eventi.png",
+			"eventi",
+			"Imagen-Secciones",
+			"offerte",
+			"<img src=\"images/responsive/Slider.png\" alt=\"\">",
+			"slider-prin",
+			"<li><a href=\"#\">",
+			"<img src=\"images/",
+			"actuali",
+			"-responsive",
+			"<div class=\"banner col-sm-6\">",
+			"autocomplete",
+			"Negocio",
+			".</",
+			"Sergio Martinez Roldan:",
+			"!important;",
+			"Politicas",
+			"dEventi",
+			"Interactivo",
+			"INTERACTIVO",
+			"acco",
+			"accoun",
+			"Sergio Martinez Roldan:",
+			"[08:32:42 a.m.] Sergio Martinez Roldan:",
+			"header-con",
+			"password",
+			"css",
+			"header-",
+			"usuarioIcono:hover",
+			"Login",
+			"usuarioIcono:hover",
+			"grid",
+			"data-"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"#e8e8e8"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 124.0
+	},
+	"output.git":
+	{
+		"height": 100.0
+	},
+	"output.sftp":
+	{
+		"height": 124.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/xampp/htdocs/travelTale/travelTale.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 336.0,
+	"status_bar_visible": true
+}

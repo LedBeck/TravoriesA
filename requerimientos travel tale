@@ -1,0 +1,51 @@
+requerimientos travel tale
+
+estructura experiencia
+	Pais > Estado > Lugar > Experiencia
+control de experiencia
+	añadir
+	modificar
+	perzonlizar mapa
+	imprimir mapa primer nivel
+
+experiencia Datos:
+	fecha
+	estacion del año{}
+	idioma{catalogo idiomas}
+	moneda{catalogo monedas}
+	tipodeViaje{sugeridos y nuevos}
+	Compañia de Viaje con quien hacer{sugeriso y nuevos}
+	Lugares visitados
+	sitios a aconsejar
+	Contar Viaje
+	huso horario{todos del mundo}
+	religion{lista con otros}
+	platos típicos{lista multiple}
+	que llevarse util{lista multiple}
+	animales de la zona{lista multiple}
+	vacunas
+	galeria de fotos
+	consejos{texto abierto}
+	galerias{}
+	comentarios{}
+
+usuarios
+	foto
+	nick
+	nombre
+	apellido
+	nacionalidad
+	fecha de nacimiento
+	mail
+	status	
+
+
+Amigos
+	agregar
+	buscar
+	borrar
+	relacionar experiencias con amigos
+
+
+
+

@@ -1,14 +1,30 @@
-var app = angular.module("travelTale", ['home','ui.bootstrap','ngRoute','ngAnimate']);
+var app = angular.module("travelTale", ['home', 'ui.bootstrap', 'ui.router', 'ngRoute', 'ngAnimate']);
 
-app.config(['$routeProvider',
-	function($routeProvider) {
-		$routeProvider.
-		when('/login', {
-			templateUrl: 'public/app/componentes/login/loginView.html'
-/*			controller: 'AddOrderController'*/
-		}).
-		otherwise({
-			redirectTo: '/'
-		});
-	}
-]);
+app.config(function($stateProvider) {
+	$stateProvider
+		.state('index', {
+			url: "",
+			views: {
+				"general": {
+					templateUrl: "public/app/componentes/home/homeView.html",
+				}
+			}
+		})
+		.state('login', {
+			url: "/login",
+			views: {
+				"general": {
+					templateUrl: "public/app/componentes/login/loginView.html",
+				}
+			}
+		})
+		.state('register', {
+			url: '/register',
+			views: {
+				"general": {
+					templateUrl: "public/app/componentes/login/registerView.html",
+				}
+			}
+		})
+		/*.state();*/
+});

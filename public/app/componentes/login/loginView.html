@@ -1,3 +1,30 @@
-<div>
-	<blockquote>LOGIN</blockquote>
+<div class="login-box" ng-controller="homeController as loginCtrl">
+	<div class="login-logo">
+		<a href="admin"><b>Admin</b>TravelTale</a>
+	</div><!-- /.login-logo -->
+	<div class="login-box-body">
+		<p class="login-box-msg">{{loginCtrl.language.labels.session}}</p>
+		<form action="../../index2.html" method="post">
+			<div class="form-group has-feedback">
+				<input type="text" class="form-control" placeholder="{{loginCtrl.language.labels.user}}"/>
+				<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+			</div>
+			<div class="form-group has-feedback">
+				<input type="password" class="form-control" placeholder="{{loginCtrl.language.labels.passoword}}"/>
+				<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+			</div>
+			<div class="row">
+				<div class="col-xs-4">
+					<button type="submit" class="btn btn-primary btn-block btn-flat">{{loginCtrl.language.labels.login}}</button>
+				</div><!-- /.col -->
+			</div>
+		</form>
+
+		<a href="#register" class="text-center">{{loginCtrl.language.labels.register}}</a>
+	</div>
 </div>
+<style>
+	body{
+		background:none repeat scroll 0 0 #d2d6de;
+	}
+</style>

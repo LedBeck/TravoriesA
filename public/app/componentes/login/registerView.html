@@ -1,0 +1,65 @@
+<div class="register-box" ng-controller="registerController as loginCtrl">
+	<div class="register-logo">
+		<a href="#login"><b>Admin</b>TravelTale</a>
+	</div>
+	<div class="register-box-body" ng-controller="DatepickerDemoCtrl">
+		<p class="login-box-msg">{{loginCtrl.language.labels.register}}</p>
+		<img class="profile-img" src="public/images/user.png"
+                    alt="">
+		<form action="" method="post">
+			<!-- <div class="form-group has-feedback">
+				<input type="text" class="form-control" ng-model="register.foto" placeholder="{{loginCtrl.language.labels.foto}}"/>
+				<span class="glyphicon glyphicon-user form-control-feedback"></span>
+			</div> -->
+			<div class="form-group has-feedback">
+				<input type="text" class="form-control" ng-model="register.email" placeholder="{{loginCtrl.language.labels.email}}"/>
+				<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+			</div>
+			<div class="form-group has-feedback">
+				<input type="password" class="form-control" ng-model="register.password" placeholder="{{loginCtrl.language.labels.passoword}}"/>
+				<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+			</div>
+			<div class="form-group has-feedback">
+				<input type="password" class="form-control" ng-model="register.repassoword" placeholder="{{loginCtrl.language.labels.rePassword}}"/>
+				<span class="glyphicon glyphicon-log-in form-control-feedback"></span>
+			</div>
+			<div class="form-group has-feedback">
+				<input type="text" class="form-control" ng-model="register.nombre" placeholder="{{loginCtrl.language.labels.nombreCompleto}}"/>
+				<span class="glyphicon glyphicon-user form-control-feedback"></span>
+			</div>
+			<div class="form-group has-feedback">
+				<input type="text" class="form-control" ng-model="register.nacionalidad" placeholder="{{loginCtrl.language.labels.nacionalidad}}" ng-model="nacionalidad" typeahead="nac for nac in nacionalidades | filter:$viewValue | limitTo:8"/>
+				<span class="glyphicon glyphicon-user form-control-feedback"></span>
+			</div>
+			<div class="form-group has-feedback">
+				<p class="input-group">
+				<input type="text" class="form-control" datepicker-popup ng-model="dt" is-open="opened" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close"  ng-model="register.fechaNacimiento" placeholder="{{loginCtrl.language.labels.nacimiento}}"/>
+				<span class="input-group-btn">
+                	<button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+              	</span>
+              	</p>
+			</div>
+			<div class="row">
+				<div class="col-xs-4">
+					<button type="submit" class="btn btn-primary btn-block btn-flat">{{loginCtrl.language.labels.registerL}}</button>
+				</div><!-- /.col -->
+			</div>
+		</form>        
+		<a href="login.html" class="text-center">{{loginCtrl.language.labels.tengoCuenta}}</a>
+	</div><!-- /.form-box -->
+</div><!-- /.register-box -->
+<style>
+	body{
+		background:none repeat scroll 0 0 #d2d6de;
+	}
+	.profile-img
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+</style>

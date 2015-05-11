@@ -3,3 +3,5 @@ RewriteBase /travelTale
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php/$1 [L]
+php_flag eaccelerator.enable 0
+php_flag eaccelerator.optimizer 0

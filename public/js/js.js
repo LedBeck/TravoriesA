@@ -1,6 +1,7 @@
 $('input[name="nacimiento"]').daterangepicker({
 	singleDatePicker: true,
-	showDropdowns: true
+	showDropdowns: true,
+	format: 'YYYY-MM-DD'
 });
 
 var substringMatcher = function(strs) {
@@ -36,12 +37,34 @@ $.getJSON("getNacionalidades", function(nacionalidades) {
 });
 $('#register').on('submit',function(evt){
 	evt.preventDefault();
-	data = new FormData();
-    data.append( 'file', $( 'input[name="foto"]' )[0].files[0] );
-    // data.append('form',$('#register').serialize());
-	$.post($('#register').attr('action'),data, function(data, textStatus, xhr) {
-		console.log(data);
+	if($('input[name="password"]').val() != $('input[name="repassword"]').val()){
+		alert('El password no coincide');
+		return false;
+	}
+	var postData = new FormData();
+	var files = $('input[name="foto"]').prop('files')[0];
+    postData.append( 'image',files);
+
+    $('input[type="email"],input[type="text"],input[type="password"]').each(function(index, el) {
+    	postData.append(el.name,el.value);
+    });
+
+    $.ajax({
+	    url : $('#register').attr('action'),
+	    type: "POST",
+	    data : postData,
+	    processData: false,
+	    contentType: false,
+	    success:function(data, textStatus, jqXHR){
+	        console.log(data);
+	    },
+	    error: function(jqXHR, textStatus, errorThrown){
+				//if fails     
+		}
 	});
+	/*$.post(,{contenttype:false, processdata:false,data : data}, function(data, textStatus, xhr) {
+		console.log(data);
+	});*/
 	return false;
 })
 $('input[name="foto"]').fileinput({

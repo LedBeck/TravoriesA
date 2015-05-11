@@ -55,6 +55,18 @@ class Admin extends CI_Controller {
 				if(empty($errors)==true){
 					move_uploaded_file($file_tmp,__DIR__."/../../public/uploads/".md5($this->input->post('email')));
 					$this->register->save($this->input->post());
+					// $this->load->library('email');
+					// $this->email->from('no-reply@travelTale.com', 'TravelTale');
+					// $this->email->to('facp0@hotmail.com'/*$this->input->post('email')*/);
+					// $this->email->subject('Email de Acticación');
+					// $this->email->message('<p>De click al siguiente enlace para activar su cuenta o pegue la dirección en el navegador.</p><br><br><a href="'.base_url().'admin/activarCuenta/'.md5($this->input->post('email')).'">'.base_url().'admin/activarCuenta/'.md5($this->input->post('email')).'</a>');
+
+					// $this->email->send();
+					$to = $this->input->post('email');
+					$subject = "Activar cuenta TravelTale";
+					$txt = '<p>De click al siguiente enlace para activar su cuenta o pegue la dirección en el navegador.</p><br><br><a href="'.base_url().'admin/activarCuenta/'.md5($this->input->post('email')).'">'.base_url().'admin/activarCuenta/'.md5($this->input->post('email')).'</a>';
+					$headers = "From: no-reply@travelTale.com" . "\r\n";;
+					mail($to,$subject,$txt,$headers);
 				}else{
 					print_r($errors);
 				}

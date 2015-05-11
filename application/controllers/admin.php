@@ -1,11 +1,99 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Admin extends CI_Controller {
-	public function index()
-	{
+	public function index(){
 		$this->load->view('welcome_message');
 	}
 	public function login(){
 		$this->load->view('login');
 	}
+	public function register(){
+		if ($this->input->is_ajax_request()) {
+			print_r($_POST);
+			print_r($_FILES);
+		}else{
+			$this->load->view('register');
+		}
+	}
+	public function getNacionalidades(){
+		$this->output->set_content_type('application/json')
+		->set_output(json_encode([
+			'Afgano',
+			'Alemán',
+			'Árabe',
+			'Argentino',
+			'Australiano',
+			'Inglés',
+			'Belga',
+			'Boliviano',
+			'Brasilero',
+			'Portugués',
+			'Camboyano',
+			'Canadiense',
+			'Inglés',
+			'Chileno',
+			'Chino',
+			'Chino',
+			'Colombiano',
+			'Español',
+			'Coreano',
+			'Costarricense',
+			'Cubano',
+			'Danés',
+			'Ecuatoriano',
+			'Egipcio',
+			'Salvadoreño',
+			'Estadounidense',
+			'Estonio',
+			'Etiope',
+			'Amárico',
+			'Filipino',
+			'Tagalo',
+			'Finlandés',
+			'Francés',
+			'Galés',
+			'Griego',
+			'Guatemalteco',
+			'Haitiano',
+			'Holandés',
+			'Hondureño',
+			'Indonesio',
+			'Iraquí',
+			'Iraní',
+			'Persa',
+			'Irlandés',
+			'Israelí',
+			'Italiano',
+			'Japonés',
+			'Jordano',
+			'Laosiano',
+			'Letón',
+			'Lituano',
+			'Malayo',
+			'Marroquí',
+			'Mexicano',
+			'Nicaragüense',
+			'Noruego',
+			'Neozelandés',
+			'Panameño',
+			'Paraguayo',
+			'Peruano',
+			'Polaco',
+			'Portugués',
+			'Puertorriqueño',
+			'Dominicano',
+			'Rumano',
+			'Ruso',
+			'Sueco',
+			'Suizo',
+			'Tailandés',
+			'Taiwanes',
+			'Chino',
+			'Turco',
+			'Ucraniano',
+			'Uruguayo',
+			'Venezolano',
+			'Vietnamita'
+			]));
+}
 }

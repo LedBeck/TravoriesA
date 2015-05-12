@@ -26,15 +26,15 @@ class Admin extends CI_Controller {
 		$generator->generate($metadata, APPPATH."models/Entities");
 	}
 	public function index(){
-		$this->load->view('index2');
+		$data = array(
+			'usuario'=>$_SESSION['usuario']
+			);
+		$this->load->view('index2',$data);
 	}
 	public function login(){
 		if ($this->input->is_ajax_request()) {
 			if($datos = $this->register->checkLogin($this->input->post())){
-				// print_r($datos);
-				// $this->session->set_userdata(array('usuario'=>$datos));
-				// print_r($this->session->userdata('usuario'));
-				// exit;
+				$_SESSION = array('usuario'=>$datos);
 				$res = array('code'=>200,'msg'=>'Login Exitoso entrando...','url'=>base_url().'admin');
 			}else{
 				$res = array('code'=>500,'msg'=>'Error de usario y/o Contraseña');
@@ -45,6 +45,7 @@ class Admin extends CI_Controller {
 		}
 	}
 	public function logout(){
+		unset($_SESSION['usuario']);
 		$this->session->sess_destroy();
 		redirect('/admin/login');
 	}
@@ -82,7 +83,15 @@ class Admin extends CI_Controller {
 				}				
 				if(empty($errors)==true){
 					move_uploaded_file($file_tmp,__DIR__."/../../public/uploads/".md5($this->input->post('email')));
-					$this->register->save($this->input->post());
+					if( $this->register->save($this->input->post())){
+						$to = $this->input->post('email');
+						$subject = "Activar cuenta TravelTale";
+						$txt = '<p>De click al siguiente enlace para activar su cuenta o pegue la dirección en el navegador.</p><br><br><a href="'.base_url().'admin/activarCuenta/'.urlencode($this->input->post('email')).'/'.md5(sha1($this->input->post('email'))).'">'.base_url().urlencode($this->input->post('email')).'/'.md5(sha1($this->input->post('email'))).'</a>';
+						$headers = "From: no-reply@travelTale.com" . "\r\n";;
+						mail($to,$subject,$txt,$headers);
+					}else{
+						$res = array('code'=>500,'msg'=>print_r($errors,1));	
+					}
 					// $this->load->library('email');
 					// $this->email->from('no-reply@travelTale.com', 'TravelTale');
 					// $this->email->to('facp0@hotmail.com'/*$this->input->post('email')*/);
@@ -90,14 +99,11 @@ class Admin extends CI_Controller {
 					// $this->email->message('<p>De click al siguiente enlace para activar su cuenta o pegue la dirección en el navegador.</p><br><br><a href="'.base_url().'admin/activarCuenta/'.md5($this->input->post('email')).'">'.base_url().'admin/activarCuenta/'.md5($this->input->post('email')).'</a>');
 
 					// $this->email->send();
-					$to = $this->input->post('email');
-					$subject = "Activar cuenta TravelTale";
-					$txt = '<p>De click al siguiente enlace para activar su cuenta o pegue la dirección en el navegador.</p><br><br><a href="'.base_url().'admin/activarCuenta/'.urlencode($this->input->post('email')).'/'.md5(sha1($this->input->post('email'))).'">'.base_url().urlencode($this->input->post('email')).'/'.md5(sha1($this->input->post('email'))).'</a>';
-					$headers = "From: no-reply@travelTale.com" . "\r\n";;
-					mail($to,$subject,$txt,$headers);
+					$res = array('code'=>200,'msg'=>'Registro Exitoso','url'=>base_url().'admin');
 				}else{
-					print_r($errors);
+					$res = array('code'=>500,'msg'=>print_r($errors,1));
 				}
+					$this->output->set_content_type('application/json')->set_output(json_encode($res));
 			}
 		}else{
 			$this->load->view('register');

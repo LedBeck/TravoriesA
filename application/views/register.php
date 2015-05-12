@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Register | TravelTale</title>
 	<link rel="stylesheet" href="<?php echo base_url();?>public/css/bootstrap.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>public/css/bootstrap.css">
+	
 	<link rel="stylesheet" href="<?php echo base_url();?>public/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>public/css/font-opensanslight.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>public/css/admin.css">
@@ -65,6 +67,8 @@
     <script src="<?php echo base_url();?>public/js/plugins/typeahead.jquery.js" type="text/javascript"></script>
 	<script src="<?php echo base_url();?>public/js/fileinput.js" type="text/javascript"></script>
     <script src="<?php echo base_url();?>public/js/fileinput_locale_es.js" type="text/javascript"></script>
+    <script src="<?php echo base_url();?>public/js/plugins/noty/packaged/jquery.noty.packaged.js" type="text/javascript"></script>
+    <script src="<?php echo base_url();?>public/js/plugins/noty/themes/default.js" type="text/javascript"></script>
     <script src="<?php echo base_url();?>public/js/js.js" type="text/javascript"></script>
 </body>
 </html>

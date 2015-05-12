@@ -25,33 +25,36 @@ var substringMatcher = function(strs) {
 		cb(matches);
 	};
 };
-function generate(layout,msg,type) {
-    var n = noty({
-        text        : msg,
-        type        : 'alert',
-        // dismissQueue: true,
-        timeout: '1000',
-        layout      : 'top',
-        theme       : 'defaultTheme'
-    });
-    console.log('html: ' + n.options.id);
+
+function generate(layout, msg, type) {
+	var n = noty({
+		text: msg,
+		type: 'alert',
+		// dismissQueue: true,
+		timeout: '2000',
+		layout: 'top',
+		theme: 'defaultTheme'
+	});
+	console.log('html: ' + n.options.id);
 }
-$('#login-form').on('submit',function(evt){
+$('#login-form').on('submit', function(evt) {
 	evt.preventDefault();
-	$.post($(this).attr('action'),$(this).serialize(),function(data, textStatus, xhr) {
-		if(data.code == 500)
-			generate('top',data.msg,'alert');
-		else{
+	$.post($(this).attr('action'), $(this).serialize(), function(data, textStatus, xhr) {
+		if (data.code == 500)
+			generate('top', data.msg, 'alert');
+		else {
 			// console.log(data.url);
 			window.location = data.url;
 		}
 	});
 	return false;
 })
-$('[data-ajax]').on('change',function(){
-	$.post('getUserByEmail', {email: $(this).val()}, function(data, textStatus, xhr) {
-		if(data){
-			$('.profile-img').attr('src',base_url+'public/uploads/'+data.foto);
+$('[data-ajax]').on('change', function() {
+	$.post('getUserByEmail', {
+		email: $(this).val()
+	}, function(data, textStatus, xhr) {
+		if (data) {
+			$('.profile-img').attr('src', base_url + 'public/uploads/' + data.foto);
 		}
 	});
 });
@@ -65,31 +68,83 @@ $.getJSON("getNacionalidades", function(nacionalidades) {
 		source: substringMatcher(nacionalidades)
 	});
 });
-$('#register').on('submit',function(evt){
+$('input[name="repassword"]').on('change', function() {
+	if ($('input[name="password"]').val() != $('input[name="repassword"]').val()) {
+		generate('top', 'El password no coincide', 'alert');
+		$('input[name="repassword"]').focus();
+		$('input[name="repassword"]').val('');
+
+	}
+});
+$('#register input[name="email"]').on('change', function() {
+	var elem = $(this);
+	$.ajax({
+			url: 'getUserByEmail',
+			type: 'POST',
+			dataType: 'json',
+			data: {
+				email: elem.val()
+			},
+			async: false
+		})
+		.done(function(data, textStatus, xhr) {
+			if (data) {
+				generate('top', 'Existe un usuario con el email: '+elem.val(), 'alert');
+				elem.val('');
+				setTimeout(elem.focus(),0);
+			}
+		});
+});
+$('#register').on('submit', function(evt) {
 	evt.preventDefault();
-	if($('input[name="password"]').val() != $('input[name="repassword"]').val()){
-		alert('El password no coincide');
+	if ($('input[name="password"]').val() != $('input[name="repassword"]').val()) {
+		generate('top', 'El password no coincide', 'alert');
+		$('input[name="repassword"]').val('');
+		$.ajax({
+				url: 'getUserByEmail',
+				type: 'POST',
+				dataType: 'json',
+				data: {
+					email: $(this).val()
+				},
+				async: false
+			})
+			.done(function(data, textStatus, xhr) {
+				if (data) {
+					generate('top', 'Existe un usuario con ese email', 'alert');
+					return false;
+				}
+			});
 		return false;
 	}
 	var postData = new FormData();
 	var files = $('input[name="foto"]').prop('files')[0];
-    postData.append( 'image',files);
+	postData.append('image', files);
 
-    $('input[type="email"],input[type="text"],input[type="password"]').each(function(index, el) {
-    	postData.append(el.name,el.value.trim());
-    });
+	$('input[type="email"],input[type="text"],input[type="password"]').each(function(index, el) {
+		postData.append(el.name, el.value.trim());
+	});
 
-    $.ajax({
-	    url : $('#register').attr('action'),
-	    type: "POST",
-	    data : postData,
-	    processData: false,
-	    contentType: false,
-	    success:function(data, textStatus, jqXHR){
-	        console.log(data);
-	    },
-	    error: function(jqXHR, textStatus, errorThrown){
-				//if fails     
+	$.ajax({
+		url: $('#register').attr('action'),
+		type: "POST",
+		data: postData,
+		processData: false,
+		contentType: false,
+		success: function(data, textStatus, jqXHR) {
+			console.log(data);
+			if (typeof(data) == 'object') {
+				if (data.code == 200) {
+					window.location = data.url;
+				} else {
+					generate('top', data.msg, 'alert');
+				}
+			} else {
+				generate('top', 'Ya hay un usuario registrado con ese email, por favor agregue otro o solicite un nuevo password con el administrador.', 'alert');
+			}
+		},
+		error: function(jqXHR, textStatus, errorThrown) {
+			//if fails     
 		}
 	});
 	/*$.post(,{contenttype:false, processdata:false,data : data}, function(data, textStatus, xhr) {
@@ -99,9 +154,8 @@ $('#register').on('submit',function(evt){
 })
 $('input[name="foto"]').fileinput({
 	showUpload: false,
-	// showCaption: true,
 	browseClass: "btn btn-primary",
 	language: 'es',
-	allowedFileExtensions : ['jpg', 'png','gif'],
+	allowedFileExtensions: ['jpg', 'png', 'gif'],
 	previewFileIcon: "<i class='glyphicon glyphicon-king'></i>"
 });

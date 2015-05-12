@@ -11,7 +11,6 @@ class Register extends CI_Model {
 		return $user;
 	}
 	public function checkLogin($datos){
-		// print_r($datos);
 		$user = $this->em->getRepository('User')->findOneBy(array("email"=>$datos['email'],'password'=>md5($datos['passoword'])));
 		return $user;
 	}

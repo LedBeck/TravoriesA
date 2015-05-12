@@ -58,7 +58,7 @@
 	</div><!-- /.form-box -->
 </div><!-- /.register-box -->
 	
-	<script src="<?php echo base_url();?>public/js/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+	<script src="<?php echo base_url();?>public/js/plugins/jQuery/jquery-2.1.4.min.js"></script>
     <script src="<?php echo base_url();?>public/js/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="<?php echo base_url();?>public/js/plugins/moment.min.js" type="text/javascript"></script>
     <script src="<?php echo base_url();?>public/js/plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>

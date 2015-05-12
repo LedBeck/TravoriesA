@@ -25,12 +25,34 @@ var substringMatcher = function(strs) {
 		cb(matches);
 	};
 };
+function generate(layout,msg,type) {
+    var n = noty({
+        text        : msg,
+        type        : 'alert',
+        // dismissQueue: true,
+        timeout: '1000',
+        layout      : 'top',
+        theme       : 'defaultTheme'
+    });
+    console.log('html: ' + n.options.id);
+}
+$('#login-form').on('submit',function(evt){
+	evt.preventDefault();
+	$.post($(this).attr('action'),$(this).serialize(),function(data, textStatus, xhr) {
+		if(data.code == 500)
+			generate('top',data.msg,'alert');
+		else{
+			// console.log(data.url);
+			window.location = data.url;
+		}
+	});
+	return false;
+})
 $('[data-ajax]').on('change',function(){
 	$.post('getUserByEmail', {email: $(this).val()}, function(data, textStatus, xhr) {
 		if(data){
 			$('.profile-img').attr('src',base_url+'public/uploads/'+data.foto);
 		}
-		console.log(data);
 	});
 });
 $.getJSON("getNacionalidades", function(nacionalidades) {

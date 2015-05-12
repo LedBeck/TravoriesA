@@ -10,7 +10,12 @@
 |
 */
 
-
+$hook['post_controller_constructor'] = array(
+    'class'    => 'gestion_sesion', // clase que controla la sesion
+    'function' => 'index', // metodo encargado de todo, dentro de la clase
+    'filename' => 'gestion_sesion.php', // archivo a cargar
+    'filepath' => 'hooks' // carpeta donde se encuentra la clase
+);
 
 /* End of file hooks.php */
 /* Location: ./application/config/hooks.php */

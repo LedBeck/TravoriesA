@@ -7,7 +7,7 @@ class Admin extends CI_Controller {
 		$this->load->model('register');
 		$this->em = $this->doctrine->em;
 	}
-	public function generarEntidadesDoctrine(){
+	private function generarEntidadesDoctrine(){
 		$this->em->getConfiguration()
 		->setMetadataDriverImpl(
 			new Doctrine\ORM\Mapping\Driver\DatabaseDriver(
@@ -26,10 +26,27 @@ class Admin extends CI_Controller {
 		$generator->generate($metadata, APPPATH."models/Entities");
 	}
 	public function index(){
-		$this->load->view('welcome_message');
+		$this->load->view('index2');
 	}
 	public function login(){
-		$this->load->view('login');
+		if ($this->input->is_ajax_request()) {
+			if($datos = $this->register->checkLogin($this->input->post())){
+				print_r($datos);
+				$this->session->set_userdata(array('usuario'=>$datos));
+				print_r($this->session->userdata('usuario'));
+				exit;
+				$res = array('code'=>200,'msg'=>'Login Exitoso entrando...','url'=>base_url().'admin');
+			}else{
+				$res = array('code'=>500,'msg'=>'Error de usario y/o Contraseña');
+			}
+			$this->output->set_content_type('application/json')->set_output(json_encode($res));
+		}else{
+			$this->load->view('login');
+		}
+	}
+	public function logout(){
+		$this->session->sess_destroy();
+		redirect('/admin/login');
 	}
 	public function getUserByEmail(){
 		$this->output->set_content_type('application/json')

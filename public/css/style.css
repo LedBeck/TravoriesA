@@ -1,6 +1,6 @@
-body{
+/*body{
 	font-family:'Open Sans Light';
-}
+}*/
 .tt-menu {
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -29,4 +29,20 @@ body{
 .file-preview-frame{
     float: none !important;
     margin: 0 auto !important;
+}
+#noty_top_layout_container {
+    left: 0 !important;
+    width: 100% !important;
+}
+.noty_bar.noty_type_alert {
+    background: none repeat scroll 0 0 red;
+    color: #fff;
+    font-size: 22px !important;
+}
+.noty_text {
+    font-size: 20px;
+}
+.noty_message {
+    min-height: 45px !important;
+    padding-top: 13px !important;
 }

@@ -8,8 +8,11 @@ class Register extends CI_Model {
 	}
 	public function getUserByEmail($email){
 		$user = $this->em->getRepository("User")->findOneBy(array("email" => $email));
-		// print_r($user);
-		
+		return $user;
+	}
+	public function checkLogin($datos){
+		// print_r($datos);
+		$user = $this->em->getRepository('User')->findOneBy(array("email"=>$datos['email'],'password'=>md5($datos['passoword'])));
 		return $user;
 	}
 	public function save($data){

@@ -77,7 +77,7 @@ class Admin extends CI_Controller {
 	}
 	public function getNacionalidades(){
 		$this->output->set_content_type('application/json')
-		->set_output(json_encode([
+		->set_output(json_encode(array(
 			'Afgano',
 			'Alemán',
 			'Árabe',
@@ -154,6 +154,6 @@ class Admin extends CI_Controller {
 			'Uruguayo',
 			'Venezolano',
 			'Vietnamita'
-			]));
+			)));
 }
 }

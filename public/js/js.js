@@ -25,6 +25,14 @@ var substringMatcher = function(strs) {
 		cb(matches);
 	};
 };
+$('[data-ajax]').on('change',function(){
+	$.post('getUserByEmail', {email: $(this).val()}, function(data, textStatus, xhr) {
+		if(data){
+			$('.profile-img').attr('src',base_url+'public/uploads/'+data.foto);
+		}
+		console.log(data);
+	});
+});
 $.getJSON("getNacionalidades", function(nacionalidades) {
 	$('input[name="nacionalidad"]').typeahead({
 		hint: true,
@@ -46,7 +54,7 @@ $('#register').on('submit',function(evt){
     postData.append( 'image',files);
 
     $('input[type="email"],input[type="text"],input[type="password"]').each(function(index, el) {
-    	postData.append(el.name,el.value);
+    	postData.append(el.name,el.value.trim());
     });
 
     $.ajax({

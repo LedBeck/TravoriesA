@@ -68,7 +68,7 @@ class User
      *
      * @ORM\Column(name="email", type="string", length=45, nullable=false)
      */
-    private $email;
+    public $email;
 
     /**
      * @var integer
@@ -89,7 +89,7 @@ class User
      *
      * @ORM\Column(name="foto", type="string", length=200, nullable=true)
      */
-    private $foto;
+    public $foto;
 
     /**
      * @var string

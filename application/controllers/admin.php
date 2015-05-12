@@ -31,8 +31,19 @@ class Admin extends CI_Controller {
 	public function login(){
 		$this->load->view('login');
 	}
-	public function activarCuenta($email){
-		$user = $em->find("User", array("email" => base64_decode($mail)));
+	public function getUserByEmail(){
+		$this->output->set_content_type('application/json')
+		->set_output(json_encode($this->register->getUserByEmail($this->input->post('email'))));
+	}
+	public function activarCuenta($email,$key){
+		// echo '<pre>';
+		// echo urldecode($email);
+		// echo '</pre>';
+		if($key == md5(sha1(urldecode($email)))){
+			$user = $this->em->getRepository("User")->findBy(array("email" => urldecode($email)));
+		}else{
+			echo 'Código Invalido';
+		}
 		print_r($user);
 		// if($)
 	}
@@ -64,7 +75,7 @@ class Admin extends CI_Controller {
 					// $this->email->send();
 					$to = $this->input->post('email');
 					$subject = "Activar cuenta TravelTale";
-					$txt = '<p>De click al siguiente enlace para activar su cuenta o pegue la dirección en el navegador.</p><br><br><a href="'.base_url().'admin/activarCuenta/'.md5($this->input->post('email')).'">'.base_url().'admin/activarCuenta/'.md5($this->input->post('email')).'</a>';
+					$txt = '<p>De click al siguiente enlace para activar su cuenta o pegue la dirección en el navegador.</p><br><br><a href="'.base_url().'admin/activarCuenta/'.urlencode($this->input->post('email')).'/'.md5(sha1($this->input->post('email'))).'">'.base_url().urlencode($this->input->post('email')).'/'.md5(sha1($this->input->post('email'))).'</a>';
 					$headers = "From: no-reply@travelTale.com" . "\r\n";;
 					mail($to,$subject,$txt,$headers);
 				}else{

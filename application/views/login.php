@@ -22,9 +22,10 @@
       </div><!-- /.login-logo -->
       <div class="login-box-body">
         <p class="login-box-msg">Inicie Sesión</p>
+        <img class="profile-img" src="<?php echo base_url();?>public/images/user.png" alt="">
         <form action="../../index2.html" method="post">
           <div class="form-group has-feedback">
-            <input type="email" class="form-control" name="email" placeholder="Email" required/>
+            <input type="email" class="form-control" data-ajax name="email" placeholder="Email" required/>
             <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
           </div>
           <div class="form-group has-feedback">
@@ -43,5 +44,25 @@
     </div><!-- /.login-box -->
     <script src="<?php echo base_url();?>public/js/plugins/jQuery/jquery-2.1.4.min.js"></script>
     <script src="<?php echo base_url();?>public/js/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="<?php echo base_url();?>public/js/plugins/moment.min.js" type="text/javascript"></script>
+    <script src="<?php echo base_url();?>public/js/plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
+    <script src="<?php echo base_url();?>public/js/plugins/typeahead.jquery.js" type="text/javascript"></script>
+    <script src="<?php echo base_url();?>public/js/fileinput.js" type="text/javascript"></script>
+    <script src="<?php echo base_url();?>public/js/fileinput_locale_es.js" type="text/javascript"></script>
+    <script src="<?php echo base_url();?>public/js/js.js" type="text/javascript"></script>
+    <script>
+      window.base_url = <?php echo json_encode(base_url()); ?>;
+    </script>
+    <style>
+      .profile-img{
+          width: 96px;
+          height: 96px;
+          margin: 0 auto 10px;
+          display: block;
+          -moz-border-radius: 50%;
+          -webkit-border-radius: 50%;
+          border-radius: 50%;
+      }
+    </style>
   </body>
 </html>

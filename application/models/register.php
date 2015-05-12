@@ -6,6 +6,12 @@ class Register extends CI_Model {
 		parent::__construct();
 		$this->em = $this->doctrine->em;
 	}
+	public function getUserByEmail($email){
+		$user = $this->em->getRepository("User")->findOneBy(array("email" => $email));
+		// print_r($user);
+		
+		return $user;
+	}
 	public function save($data){
 		$user = new User;
 		$user->setUsername($data['email']);
@@ -15,7 +21,6 @@ class Register extends CI_Model {
 		$user->setFechanacimiento($data['nacimiento']);
 		$user->setNacionalidad($data['nacionalidad']);
 		if(file_exists(__DIR__.'/../../public/uploads/'.md5($data['email']))){
-			echo 'rata';
 			$user->setFoto(md5($data['email']));
 		}
 		$user->setEstatus('0');

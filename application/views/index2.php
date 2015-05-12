@@ -12,5 +12,12 @@
 	<link rel="stylesheet" href="<?php echo base_url();?>public/css/animate.css">
 </head>
 <body ui-view="general" class="skin-blue">
+	<script src="<?php echo base_url();?>public/js/angular.min.js"></script>
+	<script src="<?php echo base_url();?>public/js/angular-route.js"></script>
+	<script src="<?php echo base_url();?>public/js/angular-animate.js"></script>
+	<script src="<?php echo base_url();?>public/js/ui-bootstrap.min.js"></script>
+	<script src="<?php echo base_url();?>public/js/angular-ui-router.js"></script>
+	<script src="<?php echo base_url();?>public/app/componentes/home/homeController.js"></script>
+	<script src="<?php echo base_url();?>public/app/app.js"></script>
 </body>
 </html>

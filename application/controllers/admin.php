@@ -31,10 +31,10 @@ class Admin extends CI_Controller {
 	public function login(){
 		if ($this->input->is_ajax_request()) {
 			if($datos = $this->register->checkLogin($this->input->post())){
-				print_r($datos);
-				$this->session->set_userdata(array('usuario'=>$datos));
-				print_r($this->session->userdata('usuario'));
-				exit;
+				// print_r($datos);
+				// $this->session->set_userdata(array('usuario'=>$datos));
+				// print_r($this->session->userdata('usuario'));
+				// exit;
 				$res = array('code'=>200,'msg'=>'Login Exitoso entrando...','url'=>base_url().'admin');
 			}else{
 				$res = array('code'=>500,'msg'=>'Error de usario y/o Contraseña');

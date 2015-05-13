@@ -121,7 +121,7 @@ $('#register').on('submit', function(evt) {
 	var files = $('input[name="foto"]').prop('files')[0];
 	postData.append('image', files);
 
-	$('input[type="email"],input[type="text"],input[type="password"]').each(function(index, el) {
+	$('input[type="email"],input[type="text"],input[type="password"],input[type="hidden"]').each(function(index, el) {
 		postData.append(el.name, el.value.trim());
 	});
 

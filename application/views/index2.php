@@ -31,13 +31,13 @@
 						<li class="dropdown notifications-menu">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 								<i class="fa fa-bell-o"></i>
-								<span class="label label-warning">10</span>
+								<!-- <span class="label label-warning">10</span> -->
 							</a>
 							<ul class="dropdown-menu">
-								<li class="header">You have 10 notifications</li>
+								<li class="header">No tiene Notificaciones</li>
 								<li>
 									<!-- inner menu: contains the actual data -->
-									<ul class="menu">
+									<!-- <ul class="menu">
 										<li>
 											<a href="#">
 												<i class="fa fa-users text-aqua"></i> 5 new members joined today
@@ -63,9 +63,9 @@
 												<i class="fa fa-user text-red"></i> You changed your username
 											</a>
 										</li>
-									</ul>
+									</ul> -->
 								</li>
-								<li class="footer"><a href="#">View all</a></li>
+								<li class="footer"><!-- <a href="#">View all</a> --></li>
 							</ul>
 						</li>
 
@@ -84,16 +84,16 @@
 									</p>
 								</li>
 								<!-- Menu Body -->
-								<li class="user-body">
+								<!-- <li class="user-body">
 									<div class="col-xs-4 text-center">
 										<a href="#">Friends</a>
 									</div>
-								</li>
+								</li> -->
 								<!-- Menu Footer-->
 								<li class="user-footer">
-									<div class="pull-left">
-										<a href="#" class="btn btn-default btn-flat">Profile</a>
-									</div>
+<!-- 									<div class="pull-left">
+	<a href="#" class="btn btn-default btn-flat">Perfil</a>
+</div> -->
 									<div class="pull-right">
 										<a href="<?php echo base_url().'admin/logout' ?>" class="btn btn-default btn-flat">Log Out</a>
 									</div>
@@ -119,40 +119,50 @@
 					</div>
 				</div>
 				<!-- search form -->
-				<form action="#" method="get" class="sidebar-form">
-					<div class="input-group">
-						<input type="text" name="q" class="form-control" placeholder="Search..."/>
-						<span class="input-group-btn">
-							<button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
-						</span>
-					</div>
-				</form>
+<!-- 				<form action="#" method="get" class="sidebar-form">
+	<div class="input-group">
+		<input type="text" name="q" class="form-control" placeholder="Search..."/>
+		<span class="input-group-btn">
+			<button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+		</span>
+	</div>
+</form> -->
 				<!-- /.search form -->
 				<!-- sidebar menu: : style can be found in sidebar.less -->
 				<ul class="sidebar-menu" ng-controller="menuController as menu">
-					<li class="header">MAIN NAVIGATION</li>
-					<li ng-class="{active:menu.menuActive == 1 }">
-						<a href="#/login" ng-click="menu.menuActive = 1">
+					<li class="header">Menú Principal</li>
+					<li>
+						<a href="#" >
 							<i class="fa fa-dashboard" ></i><span>Dashboard</span>
 						</a>
 					</li>
-					<li ng-class="{active:menu.menuActive == 2 }">
-						<a href="#" ng-click="menu.menuActive = 2">
-							<i class="fa fa-th"></i> <span>Widgets</span> <small class="label pull-right bg-green">new</small>
+					<li>
+						<a href="#" >
+							<i class="fa fa-th"></i> <span>Perfil</span>
 						</a>
 					</li>
-					<li ng-class="{active:menu.menuActive == 3 }">
-						<a href="#" ng-click="menu.menuActive = 3">
-							<i class="fa fa-calendar"></i> <span>Calendar</span>
-							<small class="label pull-right bg-red">3</small>
+					<li class="treeview">
+						<a href="#" >
+							<i class="fa fa-th"></i> <span>Experiencia</span><i class="fa fa-angle-left pull-right"></i>
 						</a>
+						<ul class="treeview-menu">
+							<li><a href="<?php echo base_url().'admin/test1' ?>" data-type="ajax" data-load="principal"><i class="fa fa-circle-o"></i> Ver Todas</a></li>
+							<li><a href="<?php echo base_url().'admin/test2' ?>" data-type="ajax" data-load="principal"><i class="fa fa-circle-o"></i> Agregar</a></li>
+						</ul>
 					</li>
-					<li ng-class="{active:menu.menuActive == 4 }">
-						<a href="#" ng-click="menu.menuActive = 4">
-							<i class="fa fa-envelope"></i> <span>Mailbox</span>
-							<small class="label pull-right bg-yellow">12</small>
-						</a>
-					</li>
+
+<!-- 					<li>
+	<a href="#" >
+		<i class="fa fa-calendar"></i> <span>Calendar</span>
+		<small class="label pull-right bg-red">3</small>
+	</a>
+</li>
+<li>
+	<a href="#" >
+		<i class="fa fa-envelope"></i> <span>Mailbox</span>
+		<small class="label pull-right bg-yellow">12</small>
+	</a>
+</li> -->
 				</ul>
 			</section>
 			<!-- /.sidebar -->

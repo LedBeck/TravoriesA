@@ -129,7 +129,7 @@ class Admin extends CI_Controller {
 						$this->email->to($this->input->post('email'));
 						$this->email->subject('Activar cuenta TravelTale');
 						$this->email->message($txt);*/
-						$this->phpmailerlib->enviarMail(
+						$var = $this->phpmailerlib->enviarMail(
 							array(
 								'mensaje'=>$txt,
 								'asunto'=>'Activar cuenta TravelTale',
@@ -140,6 +140,7 @@ class Admin extends CI_Controller {
 								'para'=>$this->input->post('email')
 								)
 						);
+						print_r($var);
 						exit;
 /*						if( !$this->email->send()){
 							foreach ( $this->email->get_debugger_messages() as $debugger_message )
@@ -157,7 +158,7 @@ class Admin extends CI_Controller {
 					// $this->email->message('<p>De click al siguiente enlace para activar su cuenta o pegue la dirección en el navegador.</p><br><br><a href="'.base_url().'admin/activarCuenta/'.md5($this->input->post('email')).'">'.base_url().'admin/activarCuenta/'.md5($this->input->post('email')).'</a>');
 
 					// $this->email->send();
-					$res = array('code'=>200,'msg'=>'Registro Exitoso','url'=>base_url().'admin');
+					// $res = array('code'=>200,'msg'=>'Registro Exitoso','url'=>base_url().'admin');
 				}else{
 					$res = array('code'=>500,'msg'=>print_r($errors,1));
 				}

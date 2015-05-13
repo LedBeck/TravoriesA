@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="<?php echo base_url();?>public/css/animate.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>public/css/bootstrap.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>public/css/font-awesome.min.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>public/js/plugins/daterangepicker/daterangepicker-bs3.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>public/css/admin.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>public/js/plugins/iCheck/square/blue.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>public/css/style.css">
@@ -146,8 +147,8 @@
 							<i class="fa fa-th"></i> <span>Experiencia</span><i class="fa fa-angle-left pull-right"></i>
 						</a>
 						<ul class="treeview-menu">
-							<li><a href="<?php echo base_url().'admin/test1' ?>" data-type="ajax" data-load="principal"><i class="fa fa-circle-o"></i> Ver Todas</a></li>
-							<li><a href="<?php echo base_url().'admin/test2' ?>" data-type="ajax" data-load="principal"><i class="fa fa-circle-o"></i> Agregar</a></li>
+							<li><a href="<?php echo base_url().'exp' ?>" data-type="ajax" data-load="principal"><i class="fa fa-circle-o"></i> Ver Todas</a></li>
+							<li><a href="<?php echo base_url().'exp/add' ?>" data-type="ajax" data-load="principal"><i class="fa fa-circle-o"></i> Agregar</a></li>
 						</ul>
 					</li>
 
@@ -198,6 +199,7 @@
 	<script src="<?php echo base_url();?>public/js/fileinput_locale_es.js" type="text/javascript"></script>
 	<script src="<?php echo base_url();?>public/js/plugins/noty/packaged/jquery.noty.packaged.js" type="text/javascript"></script>
 	<script src="<?php echo base_url();?>public/js/plugins/noty/themes/default.js" type="text/javascript"></script>
+	<script src="<?php echo base_url();?>public/js/chosen.jquery.js" type="text/javascript"></script>	
 	<script>
 		window.base_url = <?php echo json_encode(base_url()); ?>;
     </script>

@@ -14,6 +14,7 @@ class Register extends CI_Model {
 		$user = $this->em->getRepository('User')->findOneBy(array("email"=>$datos['email'],'password'=>md5($datos['passoword'])));
 		return $user;
 	}
+	public function edit(){}
 	public function save($data){
 		$user = new User;
 		$user->setUsername($data['email']);
@@ -31,6 +32,7 @@ class Register extends CI_Model {
 		$user->setEmail($data['email']);
 		$this->em->persist($user);
 		$this->em->flush();
+		return TRUE;
 	}
 	
 

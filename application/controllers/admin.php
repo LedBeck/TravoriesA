@@ -149,6 +149,7 @@ class Admin extends CI_Controller {
 						    $this->email->clear_debugger_messages();
 						}*/
 						// mail($to,$subject,$txt,$headers);
+						$res = array('code'=>200,'msg'=>'Registro Exitoso','url'=>base_url().'admin');
 					}else{
 						$res = array('code'=>500,'msg'=>print_r($errors,true));	
 					}
@@ -159,7 +160,6 @@ class Admin extends CI_Controller {
 					// $this->email->message('<p>De click al siguiente enlace para activar su cuenta o pegue la dirección en el navegador.</p><br><br><a href="'.base_url().'admin/activarCuenta/'.md5($this->input->post('email')).'">'.base_url().'admin/activarCuenta/'.md5($this->input->post('email')).'</a>');
 
 					// $this->email->send();
-					// $res = array('code'=>200,'msg'=>'Registro Exitoso','url'=>base_url().'admin');
 				}else{
 					$res = array('code'=>500,'msg'=>print_r($errors,true));
 				}

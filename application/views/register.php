@@ -55,6 +55,7 @@
 					<button type="submit" class="btn btn-primary btn-block btn-flat">Guardar</button>
 				</div><!-- /.col -->
 			</div>
+			<input type="hidden" name="registro" value="1">
 		</form>        
 		<a href="login" class="text-center">¿Tiene cuenta?</a>
 	</div><!-- /.form-box -->

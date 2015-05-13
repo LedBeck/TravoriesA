@@ -19,6 +19,19 @@ var tools = {
 	removeLoader : function(div){
 		$(div).find('.loader').remove();
 	},
+	initLinkMagicos : function(){
+		$('[data-type="ajax"]').each(function(index, el) {
+			$(el).on('click',function(evt){
+				evt.preventDefault();
+				if($(this).attr('data-load') == 'principal')
+					tools.cargarPrincipal({url:this.href});
+				else
+					tools.cargarPrincipal({url:this.href,elemento: $(this).attr('data-load')});
+				
+				return false;
+			});
+		});
+	},
 	cargarPrincipal : function(params){
 		// params maximos { url , params, append, callback, json,elemento}
 		if(!params.params)
@@ -31,9 +44,6 @@ var tools = {
 			params.elemento = '.mainSection';
 		tools.createLoader(params.elemento);
 		$.post(params.url,params.params, function(data, textStatus, xhr) {
-			console.log(textStatus);
-			console.log(xhr);
-			console.log(data);
 			tools.removeLoader(params.elemento);
 			if(params.json === false ){
 				if(params.append){
@@ -49,8 +59,9 @@ var tools = {
 	}
 }
 /*TEST of tools*/
+tools.initLinkMagicos();
 tools.cargarPrincipal({
-	url: base_url+'admin/register'
+	url: base_url+'admin/dashboard'
 });
 // tools.createLoader('.mainSection');
 // setTimeout(function(){tools.removeLoader('.mainSection')},3000);

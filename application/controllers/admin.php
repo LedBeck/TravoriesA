@@ -31,6 +31,15 @@ class Admin extends CI_Controller {
 			);
 		$this->load->view('index2',$data);
 	}
+	public function test1(){
+		echo 'QUeso';
+	}
+	public function test2(){
+		echo 'Rata' ;
+	}
+	public function dashboard(){
+		$this->load->view('dashboard');
+	}
 	public function login(){
 		if ($this->input->is_ajax_request()) {
 			if($datos = $this->register->checkLogin($this->input->post())){
@@ -66,7 +75,7 @@ class Admin extends CI_Controller {
 		// if($)
 	}
 	public function register(){
-		if ($this->input->is_ajax_request()) {
+		if ($this->input->is_ajax_request()  && $this->input->post('registro') == '1') {
 			if(isset($_FILES['image'])){
 				$errors= array();
 				$file_name = $_FILES['image']['name'];

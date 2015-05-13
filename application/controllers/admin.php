@@ -140,6 +140,7 @@ class Admin extends CI_Controller {
 								'para'=>$this->input->post('email')
 								)
 						);
+						exit;
 /*						if( !$this->email->send()){
 							foreach ( $this->email->get_debugger_messages() as $debugger_message )
       							echo $debugger_message;

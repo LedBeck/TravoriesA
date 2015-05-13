@@ -150,7 +150,7 @@ class Admin extends CI_Controller {
 						}*/
 						// mail($to,$subject,$txt,$headers);
 					}else{
-						$res = array('code'=>500,'msg'=>print_r($errors,1));	
+						$res = array('code'=>500,'msg'=>print_r($errors,true));	
 					}
 					// $this->load->library('email');
 					// $this->email->from('no-reply@travelTale.com', 'TravelTale');
@@ -161,7 +161,7 @@ class Admin extends CI_Controller {
 					// $this->email->send();
 					// $res = array('code'=>200,'msg'=>'Registro Exitoso','url'=>base_url().'admin');
 				}else{
-					$res = array('code'=>500,'msg'=>print_r($errors,1));
+					$res = array('code'=>500,'msg'=>print_r($errors,true));
 				}
 				$this->output->set_content_type('application/json')->set_output(json_encode($res));
 			}

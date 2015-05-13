@@ -9,13 +9,13 @@ class Gestion_sesion{
 		$controlador = $CI->router->class;
 		$action = $CI->router->method;
 		$controladores_guest = array('welcome','admin');
-		$action_guest = array('login','getUserByEmail','activarCuenta','register','getNacionalidades');
+		$action_guest = array('login','getUserByEmail','activarCuenta','register','getNacionalidades','sendEmail');
 		if( !isset($_SESSION['usuario']) && $controlador == 'admin' && !in_array($action,$action_guest)){
 			redirect('/admin/login');
 		}
       // si la sesion se inicio y el usuario intenta entrar a login_c, 
       // lo enviamos al index    
-		if(isset($_SESSION['usuario']) && $action=='login'){
+		if(isset($_SESSION['usuario']) && in_array($action,array('login','register'))) {
 			redirect('/admin');
 		}
       // si el usuario es un visitante, 

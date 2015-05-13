@@ -72,13 +72,13 @@
 						<!-- User Account: style can be found in dropdown.less -->
 						<li class="dropdown user user-menu">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-								<img src="public/uploads/<?php echo $usuario->getFoto() ?>" class="user-image" alt="User Image"/>
+								<img src="<?php echo base_url();?>public/uploads/<?php echo $usuario->getFoto() ?>" class="user-image" alt="User Image"/>
 								<span class="hidden-xs"><?php echo $usuario->getNombre() ?></span>
 							</a>
 							<ul class="dropdown-menu">
 								<!-- User image -->
 								<li class="user-header">
-									<img src="public/uploads/<?php echo $usuario->getFoto() ?>" class="img-circle" alt="User Image" />
+									<img src="<?php echo base_url();?>public/uploads/<?php echo $usuario->getFoto() ?>" class="img-circle" alt="User Image" />
 									<p>
 										<?php echo $usuario->getNombre() ?>
 									</p>
@@ -111,7 +111,7 @@
 				<!-- Sidebar user panel -->
 				<div class="user-panel">
 					<div class="pull-left image">
-						<img src="public/uploads/<?php echo $usuario->getFoto(); ?>" class="img-circle" alt="User Image" />
+						<img src="<?php echo base_url();?>public/uploads/<?php echo $usuario->getFoto(); ?>" class="img-circle" alt="User Image" />
 					</div>
 					<div class="pull-left info">
 						<p><?php echo $usuario->getNombre(); ?></p>

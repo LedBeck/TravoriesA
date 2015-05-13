@@ -7,7 +7,7 @@ class Admin extends CI_Controller {
 		$this->load->model('register');
 		$this->em = $this->doctrine->em;
 	}
-	private function generarEntidadesDoctrine(){
+	public function generarEntidadesDoctrine(){
 		$this->em->getConfiguration()
 		->setMetadataDriverImpl(
 			new Doctrine\ORM\Mapping\Driver\DatabaseDriver(

@@ -31,9 +31,6 @@ var tools = {
 			params.elemento = '.mainSection';
 		tools.createLoader(params.elemento);
 		$.post(params.url,params.params, function(data, textStatus, xhr) {
-			console.log(textStatus);
-			console.log(xhr);
-			console.log(data);
 			tools.removeLoader(params.elemento);
 			if(params.json === false ){
 				if(params.append){

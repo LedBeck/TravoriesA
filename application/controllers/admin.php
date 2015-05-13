@@ -130,7 +130,7 @@ class Admin extends CI_Controller {
 						$this->email->to($this->input->post('email'));
 						$this->email->subject('Activar cuenta TravelTale');
 						$this->email->message($txt);*/
-						$rata = $this->phpmailerlib->enviarMail(
+						$this->phpmailerlib->enviarMail(
 							array(
 								'mensaje'=>$txt,
 								'asunto'=>'Activar cuenta TravelTale',
@@ -141,7 +141,7 @@ class Admin extends CI_Controller {
 								'para'=>$this->input->post('email')
 								)
 						);
-						print_r($rata);
+						echo $this->input->post('email');
 						exit;
 /*						if( !$this->email->send()){
 							foreach ( $this->email->get_debugger_messages() as $debugger_message )

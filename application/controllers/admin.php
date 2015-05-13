@@ -1,5 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
+error_reporting(E_ALL);
+ini_set("display_errors", 1); 
 class Admin extends CI_Controller {
 	public $em;
 	function __construct(){
@@ -129,7 +130,7 @@ class Admin extends CI_Controller {
 						$this->email->to($this->input->post('email'));
 						$this->email->subject('Activar cuenta TravelTale');
 						$this->email->message($txt);*/
-						$var = $this->phpmailerlib->enviarMail(
+						$rata = $this->phpmailerlib->enviarMail(
 							array(
 								'mensaje'=>$txt,
 								'asunto'=>'Activar cuenta TravelTale',
@@ -140,7 +141,7 @@ class Admin extends CI_Controller {
 								'para'=>$this->input->post('email')
 								)
 						);
-						print_r($var);
+						print_r($rata);
 						exit;
 /*						if( !$this->email->send()){
 							foreach ( $this->email->get_debugger_messages() as $debugger_message )
@@ -162,7 +163,7 @@ class Admin extends CI_Controller {
 				}else{
 					$res = array('code'=>500,'msg'=>print_r($errors,1));
 				}
-					$this->output->set_content_type('application/json')->set_output(json_encode($res));
+					// $this->output->set_content_type('application/json')->set_output(json_encode($res));
 			}
 		}else{
 			$this->load->view('register');

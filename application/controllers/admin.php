@@ -124,18 +124,27 @@ class Admin extends CI_Controller {
 						$txt = '<p>De click al siguiente enlace para activar su cuenta o pegue la dirección en el navegador.</p><br><br><a href="'.base_url().'admin/activarCuenta/'.urlencode($this->input->post('email')).'/'.md5(sha1($this->input->post('email'))).'">'.base_url().urlencode($this->input->post('email')).'/'.md5(sha1($this->input->post('email'))).'</a>';
 						// $headers = "From: no-reply@travelTale.com" . "\r\n";
 
-
+/*
 						$this->email->from('no-reply@traveltale.com', 'TravelTale');
 						$this->email->to($this->input->post('email'));
 						$this->email->subject('Activar cuenta TravelTale');
-						$this->email->message($txt);
-						if( !$this->email->send()){
+						$this->email->message($txt);*/
+						$this->phpmailerlib->enviarMail(
+							array(
+								'mensaje'=>$txt,
+								'asunto'=>'Activar cuenta TravelTale',
+								'de'=>array(
+									'TravelTale',
+									'no-reply@traveltale.com'
+									),
+								'para'=>$this->input->post('email')
+								)
+						);
+/*						if( !$this->email->send()){
 							foreach ( $this->email->get_debugger_messages() as $debugger_message )
       							echo $debugger_message;
 						    $this->email->clear_debugger_messages();
-						}
-						exit;
-
+						}*/
 						// mail($to,$subject,$txt,$headers);
 					}else{
 						$res = array('code'=>500,'msg'=>print_r($errors,1));	

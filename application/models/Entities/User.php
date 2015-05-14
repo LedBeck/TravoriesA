@@ -19,49 +19,49 @@ class User
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $iduser;
+    public $iduser;
 
     /**
      * @var string
      *
      * @ORM\Column(name="username", type="string", length=45, nullable=false)
      */
-    private $username;
+    public $username;
 
     /**
      * @var string
      *
      * @ORM\Column(name="nombre", type="string", length=45, nullable=false)
      */
-    private $nombre;
+    public $nombre;
 
     /**
      * @var string
      *
      * @ORM\Column(name="apellidoPaterno", type="string", length=45, nullable=false)
      */
-    private $apellidopaterno;
+    public $apellidopaterno;
 
     /**
      * @var string
      *
      * @ORM\Column(name="apellidoMaterno", type="string", length=45, nullable=false)
      */
-    private $apellidomaterno;
+    public $apellidomaterno;
 
     /**
      * @var string
      *
      * @ORM\Column(name="nacionalidad", type="string", length=45, nullable=false)
      */
-    private $nacionalidad;
+    public $nacionalidad;
 
     /**
      * @var \DateTime
      *
      * @ORM\Column(name="fechaNacimiento", type="string", length=45, nullable=true)
      */
-    private $fechanacimiento;
+    public $fechanacimiento;
 
     /**
      * @var string
@@ -75,14 +75,14 @@ class User
      *
      * @ORM\Column(name="estatus", type="integer", nullable=true)
      */
-    private $estatus;
+    public $estatus;
 
     /**
      * @var \DateTime
      *
      * @ORM\Column(name="fechacreacion", type="string", length=45,nullable=true)
      */
-    private $fechacreacion;
+    public $fechacreacion;
 
     /**
      * @var string
@@ -96,7 +96,7 @@ class User
      *
      * @ORM\Column(name="password", type="string", length=200, nullable=false)
      */
-    private $password;
+    public $password;
 
 
     /**

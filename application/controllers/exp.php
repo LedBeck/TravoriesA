@@ -7,8 +7,16 @@ class Exp extends CI_Controller {
 		$this->load->model('ModelExperiencia');
 		$this->em = $this->doctrine->em;
 	}
-	public function index(){
 
+	public function index(){
+		$data = array('exp'=> $this->em->getRepository('Experiencia')->findAll() );
+		$this->load->view('allExp',$data);
+	}
+	public function borrar($id){
+		$exp = $this->em->getRepository('Experiencia')->findOneBy(array('idexperiencia'=>$id));
+		$this->em->remove($exp);
+    	$this->em->flush();
+		redirect('admin');
 	}
 	public function add(){
 		$data = array(

@@ -17,21 +17,17 @@
 </head>
 <body class="register-page">
 <div class="register-box">
-	<div class="register-logo">
-		<a href="#login"><b>Admin</b>TravelTale</a>
-	</div>
 	<div class="register-box-body" ng-controller="DatepickerDemoCtrl">
-		<p class="login-box-msg">Nuevo Usuario Registrese</p>
+		<p class="login-box-msg">Perfil</p>
 		<form action="register" method="post" enctype="multipart/form-data" id="register">
+			<input type="hidden" name="iduser" value="<?php echo $user->getIduser() ?>">
+			<img class="profile-img" src="<?php echo base_url();?>public/uploads/<?php echo $user->getFoto() ?>" alt="">
 			<div class="form-group has-feedback">
-				<input type="file" class="form-control" name="foto" placeholder="Seleccione Foto" required/>
-			</div>
-			<div class="form-group has-feedback">
-				<input type="email" class="form-control" placeholder="Email" name="email" required/>
+				<input type="email" class="form-control" placeholder="Email" name="email" value="<?php echo $user->getEmail() ?>" required/>
 				<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
 			</div>
 			<div class="form-group has-feedback">
-				<input type="password" class="form-control" placeholder="Password" name="password" required/>
+				<input type="password" class="form-control" placeholder="Password"  name="password" required/>
 				<span class="glyphicon glyphicon-lock form-control-feedback"></span>
 			</div>
 			<div class="form-group has-feedback">
@@ -39,15 +35,15 @@
 				<span class="glyphicon glyphicon-log-in form-control-feedback"></span>
 			</div>
 			<div class="form-group has-feedback">
-				<input type="text" class="form-control" placeholder="Nombre" name="nombre" required/>
+				<input type="text" class="form-control" placeholder="Nombre" value="<?php echo $user->getNombre() ?>"  name="nombre" required/>
 				<span class="glyphicon glyphicon-user form-control-feedback"></span>
 			</div>
 			<div class="form-group has-feedback">
-				<input type="text" class="form-control" name="nacionalidad" placeholder="Nacionalidad" required/>
+				<input type="text" class="form-control" name="nacionalidad" value="<?php echo $user->getNacionalidad() ?>" placeholder="Nacionalidad" required/>
 				<span class="glyphicon glyphicon-user form-control-feedback"></span>
 			</div>
 			<div class="form-group has-feedback">
-				<input type="text" class="form-control" placeholder="Fecha de Nacimiento" name="nacimiento" required/>
+				<input type="text" class="form-control" value="<?php echo $user->getFechaNacimiento() ?>" placeholder="Fecha de Nacimiento" name="nacimiento" required/>
 				<span class="glyphicon glyphicon-calendar form-control-feedback"></span>
 			</div>
 			<div class="row">
@@ -57,7 +53,6 @@
 			</div>
 			<input type="hidden" name="registro" value="1">
 		</form>        
-		<a href="login" class="text-center">¿Tiene cuenta?</a>
 	</div><!-- /.form-box -->
 </div><!-- /.register-box -->
 	
@@ -71,10 +66,11 @@
     <script src="<?php echo base_url();?>public/js/plugins/noty/packaged/jquery.noty.packaged.js" type="text/javascript"></script>
     <script src="<?php echo base_url();?>public/js/plugins/noty/themes/default.js" type="text/javascript"></script>
     <script src="<?php echo base_url();?>public/js/chosen.jquery.js" type="text/javascript"></script>
-    <script>
-      window.base_url = '<?php echo json_encode(base_url()); ?>';
-    </script>
     <script src="<?php echo base_url();?>public/js/js.js" type="text/javascript"></script>
+</body>
+</html>
+
+
 <style>
 	body{
 		background:none repeat scroll 0 0 #d2d6de;
@@ -89,6 +85,3 @@
     border-radius: 50%;
 }
 </style>
-</body>
-</html>
-

@@ -8,6 +8,16 @@ class Admin extends CI_Controller {
 		$this->load->model('register');
 		$this->em = $this->doctrine->em;
 	}
+	public function all(){
+		$data = array('usuarios'=> $this->em->getRepository('User')->findAll() );
+		$this->load->view('allUser',$data);
+	}
+	public function borrar($id){
+		$user = $this->em->getRepository('User')->findOneBy(array('iduser'=>$id));
+		$this->em->remove($user);
+    	$this->em->flush();
+		redirect('admin');
+	}
 	public function generarEntidadesDoctrine(){
 		$this->em->getConfiguration()
 		->setMetadataDriverImpl(
@@ -25,6 +35,11 @@ class Admin extends CI_Controller {
 		$generator->setGenerateStubMethods(true);
 		$generator->setGenerateAnnotations(true);
 		$generator->generate($metadata, APPPATH."models/Entities");
+	}
+	public function perfil(){
+		$data = array('user'=> $this->em->getRepository("User")->findOneBy(array("email" => urldecode($_SESSION['usuario']->getEmail()))));
+		// print_r($admin);
+		$this->load->view('perfilusuario',$data);
 	}
 	public function index(){
 		$data = array(

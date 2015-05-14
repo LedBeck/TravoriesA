@@ -144,12 +144,12 @@
 				<ul class="sidebar-menu" ng-controller="menuController as menu">
 					<li class="header">Menú Principal</li>
 					<li>
-						<a href="#" >
+						<a href="" >
 							<i class="fa fa-dashboard" ></i><span>Dashboard</span>
 						</a>
 					</li>
 					<li>
-						<a href="#" >
+						<a href="<?php echo base_url().'admin/perfil' ?>" data-type="ajax" data-load="principal">
 							<i class="fa fa-th"></i> <span>Perfil</span>
 						</a>
 					</li>

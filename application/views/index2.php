@@ -15,6 +15,8 @@
 	<link rel="stylesheet" href="<?php echo base_url();?>public/js/plugins/daterangepicker/daterangepicker-bs3.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>public/css/admin.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>public/js/plugins/iCheck/square/blue.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>public/css/fileinput.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>public/css/bootstrap-tagsinput.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>public/css/style.css">
 </head>
 <body class="skin-blue fixed">
@@ -200,6 +202,10 @@
 	<script src="<?php echo base_url();?>public/js/plugins/noty/packaged/jquery.noty.packaged.js" type="text/javascript"></script>
 	<script src="<?php echo base_url();?>public/js/plugins/noty/themes/default.js" type="text/javascript"></script>
 	<script src="<?php echo base_url();?>public/js/chosen.jquery.js" type="text/javascript"></script>	
+	<script src="<?php echo base_url();?>public/js/fileinput.js" type="text/javascript"></script>
+    <script src="<?php echo base_url();?>public/js/fileinput_locale_es.js" type="text/javascript"></script>
+    <script src="<?php echo base_url();?>public/js/bootstrap-tagsinput.js" type="text/javascript"></script>
+    
 	<script>
 		window.base_url = <?php echo json_encode(base_url()); ?>;
     </script>

@@ -14,7 +14,8 @@ class Exp extends CI_Controller {
 		$data = array(
 			'idiomas' => $this->getCatalogo('idiomas',TRUE),
 			'husosHorarios' => $this->getCatalogo('husosHorarios',TRUE),
-			'moneda' => $this->getCatalogo('moneda',TRUE)
+			'moneda' => $this->getCatalogo('moneda',TRUE),
+			'religion' => $this->getCatalogo('religion',TRUE)
 			);
 		// print_r($this->getCatalogo('idiomas',TRUE));
 		$this->load->view('formExperiencia',$data);
@@ -442,6 +443,30 @@ class Exp extends CI_Controller {
 			// if($catalogo == 0)
 			// 	return array();
 			switch ($catalogo) {
+				case 'religion':
+					return array(
+								'Cristianismo',
+								'Islam',
+								'Secular / No religiosos / Agnóstico / Ateo',
+								'Hinduismo',
+								'Religión tradicional china',
+								'Budismo',
+								'primal-indígenas',
+								'Tradicional africana y la diáspora',
+								'Sijismo',
+								'Juche',
+								'Espiritismo',
+								'Judaísmo',
+								'Baha\'i',
+								'Jainismo',
+								'Sintoísta',
+								'Cao Dai',
+								'Zoroastrismo',
+								'Tenrikyo',
+								'Neo-Paganismo',
+								'Unitarismo Universalista',
+								'Scientology'
+						);
 				case 'idiomas':
 					return array(
 									'pastún',

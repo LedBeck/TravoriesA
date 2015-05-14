@@ -70,6 +70,7 @@
     <script src="<?php echo base_url();?>public/js/fileinput_locale_es.js" type="text/javascript"></script>
     <script src="<?php echo base_url();?>public/js/plugins/noty/packaged/jquery.noty.packaged.js" type="text/javascript"></script>
     <script src="<?php echo base_url();?>public/js/plugins/noty/themes/default.js" type="text/javascript"></script>
+    <script src="<?php echo base_url();?>public/js/chosen.jquery.js" type="text/javascript"></script>
     <script src="<?php echo base_url();?>public/js/js.js" type="text/javascript"></script>
 </body>
 </html>

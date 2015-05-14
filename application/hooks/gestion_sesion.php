@@ -15,7 +15,7 @@ class Gestion_sesion{
 		}
       // si la sesion se inicio y el usuario intenta entrar a login_c, 
       // lo enviamos al index    
-		if(isset($_SESSION['usuario']) && in_array($action,array('login','register'))) {
+		if(isset($_SESSION['usuario']) && in_array($action,array('login'))) {
 			redirect('/admin');
 		}
       // si el usuario es un visitante, 

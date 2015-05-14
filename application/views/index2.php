@@ -17,7 +17,16 @@
 	<link rel="stylesheet" href="<?php echo base_url();?>public/js/plugins/iCheck/square/blue.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>public/css/fileinput.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>public/css/bootstrap-tagsinput.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>public/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>public/css/style.css">
+	<style>
+	.register-logo{
+		display: none;
+	}
+	.register-box {
+	    margin-top: 0 !important;
+	}
+	</style>
 </head>
 <body class="skin-blue fixed">
 	<div class="wrapper">
@@ -146,6 +155,15 @@
 					</li>
 					<li class="treeview">
 						<a href="#" >
+							<i class="fa fa-th"></i> <span>Usuarios</span><i class="fa fa-angle-left pull-right"></i>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="<?php echo base_url().'admin/all' ?>" data-type="ajax" data-load="principal"><i class="fa fa-circle-o"></i> Ver Todos</a></li>
+							<li><a href="<?php echo base_url().'admin/register' ?>" data-type="ajax" data-load="principal"><i class="fa fa-circle-o"></i> Agregar</a></li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="#" >
 							<i class="fa fa-th"></i> <span>Experiencia</span><i class="fa fa-angle-left pull-right"></i>
 						</a>
 						<ul class="treeview-menu">
@@ -205,6 +223,10 @@
 	<script src="<?php echo base_url();?>public/js/fileinput.js" type="text/javascript"></script>
     <script src="<?php echo base_url();?>public/js/fileinput_locale_es.js" type="text/javascript"></script>
     <script src="<?php echo base_url();?>public/js/bootstrap-tagsinput.js" type="text/javascript"></script>
+    <script src="<?php echo base_url();?>public/js/typeahead.bundle.js" type="text/javascript"></script>
+    
+
+    <script src="<?php echo base_url();?>public/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>
     
 	<script>
 		window.base_url = <?php echo json_encode(base_url()); ?>;

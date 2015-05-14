@@ -14,7 +14,9 @@ class Register extends CI_Model {
 		$user = $this->em->getRepository('User')->findOneBy(array("email"=>$datos['email'],'password'=>md5($datos['passoword'])));
 		return $user;
 	}
-	public function edit(){}
+	public function edit(){
+		
+	}
 	public function save($data){
 		$user = new User;
 		$user->setUsername($data['email']);

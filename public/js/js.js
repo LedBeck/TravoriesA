@@ -58,7 +58,7 @@ $('[data-ajax]').on('change', function() {
 		}
 	});
 });
-$.getJSON("getNacionalidades", function(nacionalidades) {
+$.getJSON(base_url+"admin/getNacionalidades", function(nacionalidades) {
 	$('input[name="nacionalidad"]').typeahead({
 		hint: true,
 		highlight: true,

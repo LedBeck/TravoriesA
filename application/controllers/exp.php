@@ -18,15 +18,20 @@ class Exp extends CI_Controller {
     	$this->em->flush();
 		redirect('admin');
 	}
-	public function add(){
-		$data = array(
-			'idiomas' => $this->getCatalogo('idiomas',TRUE),
-			'husosHorarios' => $this->getCatalogo('husosHorarios',TRUE),
-			'moneda' => $this->getCatalogo('moneda',TRUE),
-			'religion' => $this->getCatalogo('religion',TRUE)
-			);
-		// print_r($this->getCatalogo('idiomas',TRUE));
-		$this->load->view('formExperiencia',$data);
+	public function add($queso = 0){
+		if ($this->input->is_ajax_request() && $queso != 0) {
+			print_r($this->input->post());
+			print_r($_FILES);
+		}else{
+			$data = array(
+				'idiomas' => $this->getCatalogo('idiomas',TRUE),
+				'husosHorarios' => $this->getCatalogo('husosHorarios',TRUE),
+				'moneda' => $this->getCatalogo('moneda',TRUE),
+				'religion' => $this->getCatalogo('religion',TRUE)
+				);
+			// print_r($this->getCatalogo('idiomas',TRUE));
+			$this->load->view('formExperiencia',$data);
+		}
 	}
 	public function getCatalogo($catalogo = 0,$r = FALSE){
 		if($r === FALSE){

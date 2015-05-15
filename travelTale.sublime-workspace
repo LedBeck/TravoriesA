@@ -3,42 +3,68 @@
 	{
 		"selected_items":
 		[
+			[
+				"atr",
+				"attr	.attr() - single"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"url",
+				"urldecode"
+			],
+			[
+				"base",
+				"base64_encode"
+			],
+			[
+				"jsn",
+				"json_encode"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "application/views/login.php",
+			"file": "application/libraries/Doctrine.php",
 			"settings":
 			{
-				"buffer_size": 2355,
+				"buffer_size": 2351,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n	<meta charset=\"UTF-8\">\n	<title>Register | TravelTale</title>\n	<link rel=\"stylesheet\" href=\"<?php echo base_url();?>public/css/bootstrap.css\">\n	<link rel=\"stylesheet\" href=\"<?php echo base_url();?>public/css/font-awesome.min.css\">\n	<link rel=\"stylesheet\" href=\"<?php echo base_url();?>public/css/font-opensanslight.css\">\n	<link rel=\"stylesheet\" href=\"<?php echo base_url();?>public/css/admin.css\">\n	<link rel=\"stylesheet\" href=\"<?php echo base_url();?>public/css/all-skins.css\">\n	<link rel=\"stylesheet\" href=\"<?php echo base_url();?>public/css/style.css\">\n	<link rel=\"stylesheet\" href=\"<?php echo base_url();?>public/css/animate.css\">\n	<link rel=\"stylesheet\" href=\"<?php echo base_url();?>public/js/plugins/daterangepicker/daterangepicker-bs3.css\">\n</head>\n<body class=\"register-page\">\n<div class=\"register-box\" ng-controler=\"registerController as loginCtrl\">\n	<div class=\"register-logo\">\n		<a href=\"#login\"><b>Admin</b>TravelTale</a>\n	</div>\n	<div class=\"register-box-body\" ng-controller=\"DatepickerDemoCtrl\">\n		<p class=\"login-box-msg\">Nuevo Usuario Registrese</p>\n		<img class=\"profile-img\" src=\"<?php echo base_url();?>public/images/user.png\"\n                    alt=\"\">\n		<form action=\"\" method=\"post\">\n			<div class=\"form-group has-feedback\">\n				<input type=\"text\" class=\"form-control\" placeholder=\"Email\" required/>\n				<span class=\"glyphicon glyphicon-envelope form-control-feedback\"></span>\n			</div>\n			<div class=\"form-group has-feedback\">\n				<input type=\"password\" class=\"form-control\" placeholder=\"Password\" required/>\n				<span class=\"glyphicon glyphicon-lock form-control-feedback\"></span>\n			</div>\n			<div class=\"form-group has-feedback\">\n				<input type=\"password\" class=\"form-control\" placeholder=\"Repita Password\" required/>\n				<span class=\"glyphicon glyphicon-log-in form-control-feedback\"></span>\n			</div>\n			<div class=\"form-group has-feedback\">\n				<input type=\"text\" class=\"form-control\" placeholder=\"Nombre\" required/>\n				<span class=\"glyphicon glyphicon-user form-control-feedback\"></span>\n			</div>\n			<div class=\"form-group has-feedback\">\n				<input type=\"text\" class=\"form-control\" name=\"nacionalidad\" placeholder=\"Nacionalidad\" required/>\n				<span class=\"glyphicon glyphicon-user form-control-feedback\"></span>\n			</div>\n			<div class=\"form-group has-feedback\">\n				<input type=\"text\" class=\"form-control\" placeholder=\"Fecha de Nacimiento\" name=\"nacimiento\" required/>\n				<span class=\"glyphicon glyphicon-calendar form-control-feedback\"></span>\n			</div>\n			<div class=\"row\">\n				<div class=\"col-xs-4\">\n					<button type=\"submit\" class=\"btn btn-primary btn-block btn-flat\">Guardar</button>\n				</div><!-- /.col -->\n			</div>\n		</form>        \n		<a href=\"login\" class=\"text-center\">¿Tiene cuenta?</a>\n	</div><!-- /.form-box -->\n</div><!-- /.register-box -->\n	\n	<script src=\"<?php echo base_url();?>public/js/plugins/jQuery/jQuery-2.1.4.min.js\"></script>\n    <script src=\"<?php echo base_url();?>public/js/plugins/bootstrap/js/bootstrap.min.js\" type=\"text/javascript\"></script>\n    <script src=\"<?php echo base_url();?>public/js/plugins/moment.min.js\" type=\"text/javascript\"></script>\n    <script src=\"<?php echo base_url();?>public/js/plugins/daterangepicker/daterangepicker.js\" type=\"text/javascript\"></script>\n    <script type=\"text/javascript\">\n    	\n    /*function(start, end, label) {\n        var years = moment().diff(start, 'years');\n        alert(\"You are \" + years + \" years old.\");\n     }*///);\n    </script>\n</body>\n</html>\n\n\n<style>\n	body{\n		background:none repeat scroll 0 0 #d2d6de;\n	}\n	.profile-img{\n    width: 96px;\n    height: 96px;\n    margin: 0 auto 10px;\n    display: block;\n    -moz-border-radius: 50%;\n    -webkit-border-radius: 50%;\n    border-radius: 50%;\n}\n</style>",
-			"file": "application/views/register.php",
-			"file_size": 3979,
-			"file_write_time": 130756233489534296,
+			"file": "application/models/Entities/User.php",
 			"settings":
 			{
-				"buffer_size": 3767,
+				"buffer_size": 6263,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/E/Descargas/AdminLTE-2.1.0/AdminLTE-2.1.0/pages/forms/advanced.html",
+			"contents": "Carta para mi esposa\n\nHola amor, ¿cómo estas?, sabes te amo mucho, y muchas gracias por estar siempre a mi lado\nnunca pense encontrar a alguien como tu, incluso enojada sigues preocupada por mi, perdón\nla ultima semana, no he hecho las cosas bien, pero ",
 			"settings":
 			{
-				"buffer_size": 45389,
-				"line_ending": "Unix"
+				"buffer_size": 253,
+				"line_ending": "Windows",
+				"name": "Carta para mi esposa"
 			}
 		},
 		{
-			"file": "/E/Descargas/AdminLTE-2.1.0/AdminLTE-2.1.0/pages/examples/register.html",
+			"file": "application/views/index2.php",
 			"settings":
 			{
-				"buffer_size": 3955,
+				"buffer_size": 8337,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/Descargas/AdminLTE-2.1.0/AdminLTE-2.1.0/pages/tables/data.html",
+			"settings":
+			{
+				"buffer_size": 63622,
 				"line_ending": "Unix"
 			}
 		},
@@ -46,15 +72,39 @@
 			"file": "application/controllers/admin.php",
 			"settings":
 			{
-				"buffer_size": 307,
+				"buffer_size": 5871,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "$('input[name=\"nacimiento\"]').daterangepicker({\n        		singleDatePicker: true,\n        		showDropdowns: true\n    		}); \n\n    	var substringMatcher = function(strs) {\n		  return function findMatches(q, cb) {\n		    var matches, substringRegex;\n		 \n		    // an array that will be populated with substring matches\n		    matches = [];\n		 \n		    // regex used to determine if a string contains the substring `q`\n		    substrRegex = new RegExp(q, 'i');\n		 \n		    // iterate through the pool of strings and for any string that\n		    // contains the substring `q`, add it to the `matches` array\n		    $.each(strs, function(i, str) {\n		      if (substrRegex.test(str)) {\n		        matches.push(str);\n		      }\n		    });\n		 \n		    cb(matches);\n		  };\n		};\n		 \n		var states = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California',\n		  'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii',\n		  'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana',\n		  'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota',\n		  'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire',\n		  'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota',\n		  'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island',\n		  'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont',\n		  'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'\n		];\n		 \n		$('#the-basics .typeahead').typeahead({\n		  hint: true,\n		  highlight: true,\n		  minLength: 1\n		},\n		{\n		  name: 'states',\n		  source: substringMatcher(states)\n		});",
+			"file": "application/views/dashboard.php",
 			"settings":
 			{
-				"buffer_size": 1597,
+				"buffer_size": 16,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/register.php",
+			"settings":
+			{
+				"buffer_size": 4536,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/js/Admin.js",
+			"settings":
+			{
+				"buffer_size": 1831,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/js/js.js",
+			"settings":
+			{
+				"buffer_size": 4183,
 				"line_ending": "Windows"
 			}
 		}
@@ -66,11 +116,35 @@
 		"selected_items":
 		[
 			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"form",
+				"Format: Javascript"
+			],
+			[
+				"php",
+				"Tidy PHP"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
 				"js",
 				"Set Syntax: JavaScript"
 			]
 		],
-		"width": 416.0
+		"width": 512.0
 	},
 	"console":
 	{
@@ -87,6 +161,17 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/travelTale/application/models/register.php",
+		"/C/xampp/htdocs/travelTale/.htaccess",
+		"/C/xampp/htdocs/travelTale/public/css/fileinput.css",
+		"/C/xampp/htdocs/travelTale/public/css/style.css",
+		"/C/xampp/htdocs/travelTale/public/js/js.js",
+		"/C/xampp/htdocs/travelTale/application/controllers/admin.php",
+		"/E/Descargas/AdminLTE-2.1.0/AdminLTE-2.1.0/pages/examples/register.html",
+		"/E/Descargas/AdminLTE-2.1.0/AdminLTE-2.1.0/pages/forms/advanced.html",
+		"/E/Descargas/bootstrap-fileinput-master/bootstrap-fileinput-master/examples/index.html",
+		"/C/xampp/htdocs/travelTale/application/views/register.php",
+		"/C/xampp/htdocs/travelTale/application/views/login.php",
 		"/E/Descargas/AdminLTE-2.1.0/AdminLTE-2.1.0/pages/examples/login.html",
 		"/E/Descargas/00001.vcf",
 		"/E/Site/clases/sendMail.php",
@@ -109,6 +194,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"el",
+			"Morris",
+			"password",
+			"show",
+			"Widgets",
+			"foto",
+			"param1",
+			"md5",
+			"load",
+			"img",
+			"loading.gif",
+			"Email",
+			"foto",
 			"required",
 			"Registrar",
 			"src",
@@ -132,30 +230,84 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "application/views/login.php",
+					"file": "application/libraries/Doctrine.php",
 					"settings":
 					{
-						"buffer_size": 2355,
+						"buffer_size": 2351,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								450,
-								450
+								1790,
+								1790
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 495.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/models/Entities/User.php",
+					"settings":
+					{
+						"buffer_size": 6263,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1825,
+								1825
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 945.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"settings":
+					{
+						"buffer_size": 253,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								253,
+								253
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Carta para mi esposa",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -164,19 +316,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "application/views/register.php",
+					"buffer": 3,
+					"file": "application/views/index2.php",
 					"settings":
 					{
-						"buffer_size": 3767,
+						"buffer_size": 8337,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3330,
-								3330
+								5968,
+								5968
 							]
 						],
 						"settings":
@@ -185,81 +337,80 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 720.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/E/Descargas/AdminLTE-2.1.0/AdminLTE-2.1.0/pages/forms/advanced.html",
-					"settings":
-					{
-						"buffer_size": 45389,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								41893,
-								41824
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 13845.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/E/Descargas/AdminLTE-2.1.0/AdminLTE-2.1.0/pages/examples/register.html",
-					"settings":
-					{
-						"buffer_size": 3955,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1254,
-								1257
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 270.0,
+						"translation.y": 2700.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "application/controllers/admin.php",
+					"file": "/E/Descargas/AdminLTE-2.1.0/AdminLTE-2.1.0/pages/tables/data.html",
 					"settings":
 					{
-						"buffer_size": 307,
+						"buffer_size": 63622,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								307,
-								307
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 22305.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "application/controllers/admin.php",
+					"settings":
+					{
+						"buffer_size": 5871,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1079,
+								1079
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 347.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "application/views/dashboard.php",
+					"settings":
+					{
+						"buffer_size": 16,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16,
+								16
 							]
 						],
 						"settings":
@@ -273,18 +424,46 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 7,
+					"file": "application/views/register.php",
 					"settings":
 					{
-						"buffer_size": 1597,
+						"buffer_size": 4536,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								747,
-								747
+								2824,
+								2824
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 450.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "public/js/Admin.js",
+					"settings":
+					{
+						"buffer_size": 1831,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1663,
+								1663
 							]
 						],
 						"settings":
@@ -293,7 +472,34 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 495.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "public/js/js.js",
+					"settings":
+					{
+						"buffer_size": 4183,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3136,
+								3136
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1530.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -307,7 +513,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{

@@ -4,242 +4,34 @@
 		"selected_items":
 		[
 			[
-				"re",
-				"ready	$(document).ready"
-			],
-			[
-				"get",
-				"getjson	$.getjson()"
-			],
-			[
-				"json",
-				"json_decode"
-			],
-			[
-				"text",
-				"textStatus"
-			],
-			[
-				"_SESI",
-				"_SESSION"
-			],
-			[
-				"s",
-				"session"
-			],
-			[
-				"base_",
-				"base64_decode"
-			],
-			[
-				"apelli",
-				"apellidoMaterno"
-			],
-			[
-				"file_",
-				"file_ext"
-			],
-			[
-				"print",
-				"print_r"
-			],
-			[
-				"loa",
-				"load_model	CI - Load Model"
-			],
-			[
-				"e",
-				"each	.each()"
-			],
-			[
-				"na",
-				"nacionalidades"
-			],
-			[
-				"lang",
-				"language"
-			],
-			[
-				"pa",
-				"padding-bottom"
-			],
-			[
-				"css",
-				"css	.css() - single"
-			],
-			[
-				"mar",
-				"margin-right"
-			],
-			[
-				"logo",
-				"logo-img"
-			],
-			[
-				"change",
-				"changeImage"
-			],
-			[
-				"chan",
-				"changeImage"
-			],
-			[
-				"pad",
-				"padding-bottom"
-			],
-			[
-				"margin",
-				"margin-left"
-			],
-			[
-				"z",
-				"z	z-index"
-			],
-			[
-				"mmenus",
-				"mmenuSecHovered"
-			],
-			[
-				"prin",
-				"print_r"
-			],
-			[
-				"rea",
-				"ready	$(document).ready"
-			],
-			[
-				"at",
+				"atr",
 				"attr	.attr() - single"
 			],
 			[
-				"tex",
-				"text-align"
+				"json",
+				"json_encode"
 			],
 			[
-				"template",
-				"templateUrl"
+				"url",
+				"urldecode"
 			],
 			[
-				"font-",
-				"font-family"
+				"base",
+				"base64_encode"
 			],
 			[
-				"mme",
-				"mmenuSecHovered"
-			],
-			[
-				"has",
-				"hasClass	.hasClass()"
-			],
-			[
-				"un",
-				"unbind	.unbind()"
-			],
-			[
-				"toggle",
-				"toggleClass	.toggleClass()"
-			],
-			[
-				"clas",
-				"className"
-			],
-			[
-				"conte",
-				"contenido"
-			],
-			[
-				"for",
-				"for	for (…) {…}"
-			],
-			[
-				"con",
-				"contenido"
-			],
-			[
-				"mm",
-				"mmenuSecHovered"
-			],
-			[
-				"mouse",
-				"mouseleave	.mouseleave()"
-			],
-			[
-				"slide",
-				"slideDown	.slideDown()"
-			],
-			[
-				"bor",
-				"border"
-			],
-			[
-				"select",
-				"selectpicker"
-			],
-			[
-				"font",
-				"font-size"
-			],
-			[
-				"col-",
-				"col-sm-7"
-			],
-			[
-				"margin-",
-				"margin-top"
-			],
-			[
-				"cur",
-				"cursor"
-			],
-			[
-				"te",
-				"text-align"
-			],
-			[
-				"o",
-				"overflow"
-			],
-			[
-				"fon",
-				"font-size"
-			],
-			[
-				"br",
-				"border-bottom"
-			],
-			[
-				"le",
-				"letter-spacing"
-			],
-			[
-				"remo",
-				"removeClass	.removeClass()"
-			],
-			[
-				"add",
-				"addClass	.addClass()"
-			],
-			[
-				"padd",
-				"padding-top"
-			],
-			[
-				"back",
-				"backgroundColor"
-			],
-			[
-				"c",
-				"css	.css() - single"
+				"jsn",
+				"json_encode"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "application/controllers/exp.php",
+			"file": "application/libraries/Doctrine.php",
 			"settings":
 			{
-				"buffer_size": 20644,
+				"buffer_size": 2351,
 				"line_ending": "Windows"
 			}
 		},
@@ -247,39 +39,48 @@
 			"file": "application/models/Entities/User.php",
 			"settings":
 			{
-				"buffer_size": 6253,
+				"buffer_size": 6263,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "application/controllers/admin.php",
+			"contents": "Carta para mi esposa\n\nHola amor, ¿cómo estas?, sabes te amo mucho, y muchas gracias por estar siempre a mi lado\nnunca pense encontrar a alguien como tu, incluso enojada sigues preocupada por mi, perdón\nla ultima semana, no he hecho las cosas bien, pero ",
 			"settings":
 			{
-				"buffer_size": 6144,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/views/allExp.php",
-			"settings":
-			{
-				"buffer_size": 905,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/views/perfilusuario.php",
-			"settings":
-			{
-				"buffer_size": 4704,
-				"line_ending": "Windows"
+				"buffer_size": 253,
+				"line_ending": "Windows",
+				"name": "Carta para mi esposa"
 			}
 		},
 		{
 			"file": "application/views/index2.php",
 			"settings":
 			{
-				"buffer_size": 10168,
+				"buffer_size": 8337,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/Descargas/AdminLTE-2.1.0/AdminLTE-2.1.0/pages/tables/data.html",
+			"settings":
+			{
+				"buffer_size": 63622,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/controllers/admin.php",
+			"settings":
+			{
+				"buffer_size": 5871,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/dashboard.php",
+			"settings":
+			{
+				"buffer_size": 16,
 				"line_ending": "Windows"
 			}
 		},
@@ -287,7 +88,15 @@
 			"file": "application/views/register.php",
 			"settings":
 			{
-				"buffer_size": 4731,
+				"buffer_size": 4536,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/js/Admin.js",
+			"settings":
+			{
+				"buffer_size": 1831,
 				"line_ending": "Windows"
 			}
 		},
@@ -295,36 +104,7 @@
 			"file": "public/js/js.js",
 			"settings":
 			{
-				"buffer_size": 4184,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "administrador\nmicrosite\ninvitado\n\nmarca para negocio\n\n\nadmin\n-crear ofertas\n-crear noticias a cualquier microsite y a nombre de sanremon\n-eventos\n-categorias secundarias\n\n\n\nofertas de microsite\n-crear ofertas de su microsite\n-noticia - para microsite\n\n\nTitle\n[09:06:33 a.m.] Sergio Martinez Roldan: Description\n[09:06:41 a.m.] Sergio Martinez Roldan: URL\n[09:07:24 a.m.] Sergio Martinez Roldan: Metat title\n\n\ncategorias obligatorias multiidimoa\n\n",
-			"settings":
-			{
-				"buffer_size": 446,
-				"line_ending": "Windows",
-				"name": "administrador"
-			}
-		},
-		{
-			"contents": "1- Todos los titulares naranjas que salen arriba a la izquierda en la paginas (por ejemplo, en news attualità) los bajamos 15px (esto afecta a todas la paginas que los tengan)\n2- Cambia el color a esta clase tal que así\n.fecha {\n  color: #9d9d9d;\n  font-size: 12px;\n  padding-left: 30px;\n}\n3- (te marco con asteriscos los nuevos valores que cambian si escribo un css)\n.text-left.flechita > img {\n  float: right;\n  margin-right: 35px;\n  (*) margin-top: -12px;\n  position: relative;\n}\n4- (Esto tanto en News como en services pero te hablo de news para entendernos) entre las 2 filas de columnas de 3 con la img del giro de italia deja 10 px más de separación. Luego tendrás que dejar esactamente la misma separacion que te quede acá ente este bloque y el banner de arriba \"Sanremo 2015..\"\n\n5- ATTUALITÀ escribelo con ese acento invertido\n6- En todas la páginas que lleven el bloque \"YOUR ON\", Baja 4 px la imagen del Your on\n7- Tanto en services como en news (creo que a patir de los 980 pixeles, hay un rango que hace mal el responsive)\n8- También en estas 2 páginas tenemos que evitar que las proporciones de la imagen cambien a lo largo de todo el responsive, no puede ser que se deforme la img (si necesitas que te haga alguna img a medida para este putno me lo comentas)\n9- Cuando clickamos en el menu nav superior, por un breve instante hace extraños, esto hay que corregirlo\n10- Cuando clickamos en el SIGN INTO YOUR ACCOUNT tedrás que evitar que se muevan los elementos d ela header y el nav,\n11- La pagina Grid (ponte en 995px de ancho) hay un pequeño rango que lo hace mal\n12- La página como llegar linkala en el boton    RAGGIUNGI SANREMO gris de la home\n13- En como llegar en full widdth los botones de aeropuerto, tren y coche haz las pestalas de unos 180px de ancho y Las letras de dentro tienen que ser mayúsculas siempre\n14- En las pestañas que no estan marcadas la line negra finita en la aprte de debajo no se tiene que ver\n15- Y entre ellas a los lados solo tiene que verse una linea (por ejemplo, si tenemos marcado aeropuerto) se junta la linea negra de la derecha de \"legar en tren\" con la de la izquierda de \"llegar en coche\"\n16- El mismo espacio que dejamos antes en services y news tendrás que dejarlo de margen entre el mapa y el bloque negro en como llegar\n17- En como llegar le falta el favicon\n18- El bloque negro de debajo del mapa tiene que tener 100px de alto\n19- Por encima de la frase \"Como llegar a sanremo\" (en el bloque negro) dejamos 7px de padding-top y cambiamos la frase por Scopra come arrivare a Sanremo\n20- En el input de debajo le quitamos el borde blanco que lo rodea, le damos 3px más de margen por arriba respecto al texto de encima y le  asignamos un   font-size: 14px;\n21- Al bloque de texto de Lorem ipsum  le damos :  \n  font-size: 13px;\n  line-height: 1.6;\n  color: #707173\n\n 22- En el movil responsive de como llegar hay que dejar los mismos margenes a los lados que tienen las otras apginas a todos los elementos \n 23- Poner los retinas de las img que te paso- y en como llegar te dejo las clases para que los pongas vectoriales (fa-car) (fa-train) (fa-plane)\n 24- de La pagina news ponle el enlace en home (el bloque de new (el que tiene el hombre leyendo periodico)) y le quitamos el enlace del nav \"sanremo\" \n 25- En news la img de arriba la vamos a hacer slider\n",
-			"settings":
-			{
-				"buffer_size": 3319,
-				"line_ending": "Windows",
-				"name": "1- Todos los titulares naranjas que salen arriba a"
-			}
-		},
-		{
-			"contents": "requerimientos travel tale\n\nestructura experiencia\n	Pais > Estado > Lugar > Experiencia\n	Pais > Dirección\ncontrol de experiencia\n	añadir\n	modificar\n	perzonlizar mapa\n	imprimir mapa primer nivel\n\nexperiencia Datos:\n	fecha\n	estacion del año{}\n	idioma{catalogo idiomas}\n	moneda{catalogo monedas}\n	tipodeViaje{sugeridos y nuevos}\n	Compañia de Viaje con quien hacer{sugeriso y nuevos}\n	Lugares visitados\n	sitios a aconsejar\n	Contar Viaje\n	huso horario{todos del mundo}\n	religion{lista con otros}\n	platos típicos{lista multiple}\n	que llevarse util{lista multiple}\n	animales de la zona{lista multiple}\n	vacunas\n	galeria de fotos\n	consejos{texto abierto}\n	galerias{}\n	comentarios{}\n\nusuarios\n	foto\n	nick\n	nombre\n	apellido\n	nacionalidad\n	fecha de nacimiento\n	mail\n	status	\n\n\nAmigos\n	agregar\n	buscar\n	borrar\n	relacionar experiencias con amigos\n\n\n\n\n",
-			"file": "requerimientos travel tale",
-			"file_size": 875,
-			"file_write_time": 130755076417411515,
-			"settings":
-			{
-				"buffer_size": 838,
+				"buffer_size": 4183,
 				"line_ending": "Windows"
 			}
 		}
@@ -332,7 +112,7 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 104.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
@@ -340,103 +120,31 @@
 				"Indentation: Reindent Lines"
 			],
 			[
-				"re",
-				"Indentation: Reindent Lines"
-			],
-			[
-				"rei",
-				"Indentation: Reindent Lines"
-			],
-			[
 				"form",
 				"Format: Javascript"
 			],
 			[
-				"instal",
-				"Package Control: Install Package"
-			],
-			[
-				"css",
-				"Set Syntax: CSS"
-			],
-			[
 				"php",
-				"Set Syntax: PHP"
+				"Tidy PHP"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
 			],
 			[
 				"install",
 				"Package Control: Install Package"
 			],
 			[
-				"lin",
-				"Indentation: Reindent Lines"
+				"instal",
+				"Package Control: Install Package"
 			],
 			[
-				"fon",
-				"Format CSS: Expanded"
-			],
-			[
-				"sf",
-				"SFTP: Browse Server…"
-			],
-			[
-				"sftp",
-				"SFTP: Browse Server…"
-			],
-			[
-				"ftp",
-				"SFTP: Browse Server…"
-			],
-			[
-				"sfto",
-				"SFTP: Browse Server…"
-			],
-			[
-				"sft",
-				"SFTP: Browse Server…"
-			],
-			[
-				"fo",
-				"Format CSS: Expanded"
-			],
-			[
-				"html",
-				"TidyHTML"
-			],
-			[
-				"",
-				"Dummy Image: Insert Image"
-			],
-			[
-				"for",
-				"Format CSS: Expanded"
-			],
-			[
-				"tidy",
-				"TidyHTML"
-			],
-			[
-				"reid",
-				"Indentation: Reindent Lines"
-			],
-			[
-				"commi",
-				"Git: Commit"
-			],
-			[
-				"commit",
-				"Git: Commit"
-			],
-			[
-				"git sta",
-				"Git: Status"
-			],
-			[
-				"git",
-				"Git: Commit"
+				"js",
+				"Set Syntax: JavaScript"
 			]
 		],
-		"width": 416.0
+		"width": 512.0
 	},
 	"console":
 	{
@@ -453,134 +161,22 @@
 	},
 	"file_history":
 	[
-		"/C/Users/eon2/Documents/datosTrabajo",
-		"/C/Users/eon2/Downloads/sliptree-bootstrap-tokenfield-v0.12.1-15-g9c06df4/sliptree-bootstrap-tokenfield-9c06df4/index.html",
-		"/C/Users/eon2/Downloads/AdminLTE-2.0.5/AdminLTE-2.0.5/pages/forms/editors.html",
 		"/C/xampp/htdocs/travelTale/application/models/register.php",
-		"/C/xampp/htdocs/travelTale/application/views/formExperiencia.php",
-		"/C/xampp/htdocs/travelTale/application/views/index2.php",
-		"/C/xampp/htdocs/travelTale/application/models/modelexperiencia.php",
-		"/C/xampp/htdocs/travelTale/application/views/register.php",
-		"/C/xampp/htdocs/travelTale/application/hooks/gestion_sesion.php",
-		"/C/xampp/htdocs/travelTale/public/js/js.js",
-		"/C/xampp/htdocs/travelTale/public/css/style.css",
-		"/C/Users/eon2/Downloads/sliptree-bootstrap-tokenfield-v0.12.1-15-g9c06df4/sliptree-bootstrap-tokenfield-9c06df4/docs-assets/js/typeahead.bundle.js",
-		"/C/Users/eon2/Downloads/sliptree-bootstrap-tokenfield-v0.12.1-15-g9c06df4/sliptree-bootstrap-tokenfield-9c06df4/docs-assets/css/pygments-manni.css",
-		"/C/Users/eon2/Downloads/bootstrap-tagsinput/bootstrap-tagsinput.js",
-		"/C/Users/eon2/Downloads/bootstrap-tagsinput/bootstrap-tagsinput.min.js.map",
-		"/C/Users/eon2/AppData/Local/Temp/Rar$DIa0.190/bootstrap-tagsinput-angular.min.js",
-		"/C/Users/eon2/Downloads/bootstrap-tagsinput/bootstrap-tagsinput.css",
-		"/C/Users/eon2/Downloads/chosen-1.4.2/chosen-1.4.2/chosen.jquery.json",
-		"/C/xampp/htdocs/travelTale/public/js/app.js",
-		"/C/Users/eon2/Downloads/AdminLTE-2.0.5/AdminLTE-2.0.5/pages/forms/general.html",
-		"/C/xampp/htdocs/travelTale/application/models/experiencia.php",
-		"/C/xampp/htdocs/index.php",
-		"/C/xampp/htdocs/travelTale/application/controllers/admin.php",
-		"/C/xampp/htdocs/travelTale/application/config/autoload.php",
-		"/C/xampp/htdocs/travelTale/application/models/Entities/Comentario.php",
-		"/C/xampp/htdocs/travelTale/application/views/login.php",
-		"/C/xampp/htdocs/travelTale/application/models/Entities/Experiencia.php",
-		"/C/xampp/htdocs/travelTale/application/controllers/experiencia.php",
-		"/C/xampp/htdocs/travelTale/public/js/Admin.js",
-		"/C/xampp/htdocs/travelTale/application/libraries/PHPMailerLib.php",
-		"/C/xampp/htdocs/travelTale/application/libraries/PHPMailer/examples/gmail.php",
-		"/C/xampp/htdocs/lord/clases/class.correo.php",
-		"/C/xampp/htdocs/travelTale/application/config/email.php",
-		"/C/Users/eon2/Downloads/PHPMailer-master/PHPMailer-master/examples/gmail.phps",
-		"/C/Users/eon2/Downloads/PHPMailer-master/PHPMailer-master/PHPMailerAutoload.php",
-		"/C/xampp/php/php.ini",
-		"/C/xampp/htdocs/travelTale/application/config/routes.php",
-		"/C/xampp/htdocs/travelTale/application/config/config.php",
-		"/C/xampp/htdocs/travelTale/application/config/hooks.php",
-		"/C/Users/eon2/Downloads/noty-2.3.5/noty-2.3.5/demo/allLayouts.html",
-		"/C/xampp/htdocs/travelTale/application/controllers/welcome.php",
-		"/C/Users/eon2/Downloads/AdminLTE-2.0.5/AdminLTE-2.0.5/dist/js/app.js",
-		"/C/Users/eon2/Downloads/noty-2.3.5/noty-2.3.5/js/noty/themes/default.js",
-		"/C/Users/eon2/Downloads/noty-2.3.5/noty-2.3.5/js/noty/themes/bootstrap.js",
-		"/C/Users/eon2/Downloads/noty-2.3.5/noty-2.3.5/js/noty/themes/relax.js",
-		"/C/xampp/htdocs/travelTale/public/js/plugins/noty/promise.js",
-		"/C/xampp/htdocs/travelTale/public/js/plugins/noty/jquery.noty.js",
 		"/C/xampp/htdocs/travelTale/.htaccess",
-		"/C/xampp/htdocs/travelTale/application/models/Entities/User.php",
-		"/C/xampp/htdocs/travelTale/application/libraries/Doctrine.php",
-		"/C/xampp/htdocs/travelTale/application/models/Entities/Relacion.php",
-		"/C/xampp/htdocs/travelTale/application/config/database.php",
-		"/C/xampp/htdocs/travelTale/public/app/componentes/home/homeView.html",
-		"/C/Users/eon2/Downloads/AdminLTE-2.0.5/AdminLTE-2.0.5/pages/examples/register.html",
-		"/C/xampp/htdocs/travelTale/public/app/componentes/login/loginView.html",
-		"/C/xampp/htdocs/travelTale/public/app/componentes/login/registerView.html",
-		"/C/Users/eon2/Downloads/AdminLTE-2.0.5/AdminLTE-2.0.5/dist/css/AdminLTE.css",
-		"/C/xampp/htdocs/travelTale/application/views/welcome_message.php",
-		"/C/xampp/htdocs/travelTale/public/app/componentes/home/homeController.js",
-		"/C/xampp/htdocs/travelTale/public/app/app.js",
-		"/C/xampp/htdocs/travelTale/public/css/admin.css",
-		"/C/Users/eon2/Downloads/AdminLTE-2.0.5/AdminLTE-2.0.5/dist/css/AdminLTE.min.css",
-		"/C/xampp/htdocs/travelTale/public/app/componentes/login/registerView",
-		"/C/Users/eon2/Downloads/AdminLTE-2.0.5/AdminLTE-2.0.5/index.html",
-		"/C/Users/eon2/Downloads/AdminLTE-2.0.5/AdminLTE-2.0.5/pages/examples/login.html",
-		"/C/xampp/htdocs/travelTale/requerimientos travel tale",
-		"/C/xampp/htdocs/travelTale/application/views/index.php",
-		"/C/Users/eon2/Downloads/AdminLTE-2.0.5/AdminLTE-2.0.5/dist/css/skins/_all-skins.css",
-		"/C/xampp/htdocs/travelTale/public/css/font-opensanslight.css",
-		"/C/xampp/htdocs/travelTale/public/app/app.routes.js",
-		"/C/xampp/htdocs/sanremo/fonts/stylesheet.css",
-		"/C/Users/eon2/Downloads/sb-admin-angular-master/sb-admin-angular-master/bower.json",
-		"/C/Users/eon2/Downloads/sb-admin-angular-master/sb-admin-angular-master/app/scripts/app.js",
-		"/C/Users/eon2/Downloads/sb-admin-angular-master/sb-admin-angular-master/app/js/sb-admin-2.js",
-		"/C/Users/eon2/Downloads/rdash-angular-master/rdash-angular-master/gulpfile.js",
-		"/C/xampp/htdocs/travelTale/index.php",
-		"/C/xampp/htdocs/sanremo/grid.html",
-		"/C/xampp/htdocs/sanremo/mapa.html",
-		"/C/xampp/htdocs/sanremo/mapa2.html",
-		"/C/xampp/htdocs/sanremo/microsite.html",
-		"/C/xampp/htdocs/sanremo/news.html",
-		"/C/xampp/htdocs/sanremo/services.html",
-		"/C/xampp/htdocs/sanremo/comoLlegar.html",
-		"/C/xampp/htdocs/sanremo/css/responsive.css",
-		"/C/xampp/htdocs/sanremo/css/css.comoLlegar.css",
-		"/C/xampp/htdocs/sanremo/css/css.css",
-		"/C/xampp/htdocs/sanremo/index.html",
-		"/C/xampp/htdocs/sanremo/css/css.news.css",
-		"/C/Users/eon2/AppData/Local/Temp/fz3temp-1/wp-config.php",
-		"/C/Users/eon2/AppData/Local/Temp/fz3temp-1/index.php",
-		"/C/xampp/htdocs/sanremo/css/css.microsite.css",
-		"/C/xampp/htdocs/sanremo/css/css.grid.css",
-		"/C/xampp/htdocs/sanremo/css/css.mapa.css",
-		"/C/xampp/htdocs/sanremo/js/js.microsite.js",
-		"/C/xampp/htdocs/sanremo/js/js.mapa.js",
-		"/C/xampp/htdocs/sanremo/css/bootstrap.min.css",
-		"/C/xampp/htdocs/sanremo/js/js.js",
-		"/C/xampp/htdocs/sanremo/js/js.grid.js",
-		"/C/Users/eon2/Downloads/working.php",
-		"/C/xampp/htdocs/sanremo/images/Offers-logo.png",
-		"/C/xampp/htdocs/sanremo/sftp-config.json",
-		"/C/xampp/htdocs/sanremoOn/index.html",
-		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429739555/esedigital/var/www/doffice.com.mx/sanremoOn/css/css.css",
-		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429804174/esedigital/var/www/doffice.com.mx/sanremoOn/css/responsive.css",
-		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429795359/esedigital/var/www/doffice.com.mx/sanremoOn/index.html",
-		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429801138/esedigital/var/www/doffice.com.mx/sanremoOn/grid.html",
-		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429803376/esedigital/var/www/doffice.com.mx/sanremoOn/css/css.grid.css",
-		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429796066/esedigital/var/www/doffice.com.mx/sanremoOn/js/js.js",
-		"/C/Users/eon2/Downloads/ui-bootstrap-tpls-0.12.1.js",
-		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429738632/esedigital/var/www/doffice.com.mx/sanremoOn/grid.html",
-		"/C/xampp/htdocs/sanremoOn/css/css.css",
-		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429731004/esedigital/var/www/doffice.com.mx/sanremoOn/css/css.css",
-		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429731125/esedigital/var/www/doffice.com.mx/sanremoOn/js/js.js",
-		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429731253/esedigital/var/www/doffice.com.mx/sanremoOn/index.html",
-		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429731174/esedigital/var/www/doffice.com.mx/sanremoOn/css/responsive.css",
-		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429735333/esedigital/var/www/doffice.com.mx/sanremoOn/grid.html",
-		"/C/xampp/htdocs/sanremoOn/js/js.js",
-		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429724088/esedigital/var/www/doffice.com.mx/sanremoOn/css/css.css",
-		"/C/Users/eon2/Downloads/TarjetaBancomer",
-		"/C/Users/eon2/AppData/Roaming/Sublime Text 2/Packages/User/sftp_servers/esedigital",
-		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429648939/esedigital/var/www/doffice.com.mx/sanremoOn/css/css.css",
-		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429651817/esedigital/var/www/doffice.com.mx/sanremoOn/index.html",
-		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429650815/esedigital/var/www/doffice.com.mx/sanremoOn/css/css.grid.css",
-		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429648973/esedigital/var/www/doffice.com.mx/sanremoOn/css/responsive.css",
-		"/C/users/eon2/appdata/local/temp/sublime-sftp-browse-1429652220/esedigital/var/www/doffice.com.mx/sanremoOn/js/retina.js",
-		"/C/demo/www/css/style.css",
-		"/C/Users/eon2/AppData/Local/Temp/fz3temp-1/css.css",
-		"/C/Users/eon2/AppData/Local/Temp/fz3temp-1/responsive.css"
+		"/C/xampp/htdocs/travelTale/public/css/fileinput.css",
+		"/C/xampp/htdocs/travelTale/public/css/style.css",
+		"/C/xampp/htdocs/travelTale/public/js/js.js",
+		"/C/xampp/htdocs/travelTale/application/controllers/admin.php",
+		"/E/Descargas/AdminLTE-2.1.0/AdminLTE-2.1.0/pages/examples/register.html",
+		"/E/Descargas/AdminLTE-2.1.0/AdminLTE-2.1.0/pages/forms/advanced.html",
+		"/E/Descargas/bootstrap-fileinput-master/bootstrap-fileinput-master/examples/index.html",
+		"/C/xampp/htdocs/travelTale/application/views/register.php",
+		"/C/xampp/htdocs/travelTale/application/views/login.php",
+		"/E/Descargas/AdminLTE-2.1.0/AdminLTE-2.1.0/pages/examples/login.html",
+		"/E/Descargas/00001.vcf",
+		"/E/Site/clases/sendMail.php",
+		"/E/Site/index.html",
+		"/C/xampp/htdocs/travelTale/application/libraries/Layout.php"
 	],
 	"find":
 	{
@@ -598,143 +194,32 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"admin",
-			"Acciones",
-			"allUser",
-			"$em",
-			"guest",
-			"Nombre",
-			"td",
-			"email",
-			"perfil",
-			"private",
-			"perfil",
-			"Viaje",
-			"llevar",
-			"add",
-			"experiencia",
-			"typeahead",
-			" : ",
-			"\n",
-			"Moneda",
-			"moneda",
-			"json",
-			"Primavera",
-			"id=\"exampleInputEmail1\"",
-			"daterangepicker",
-			"email",
-			"test1",
-			"form",
-			"\n",
-			" 	",
-			"peso",
-			"Moneda",
-			"\n",
-			"'\n",
-			"vietnamita",
-			"\n",
-			"*",
-			"• ",
-			"user",
-			"User",
-			"index",
-			"txt",
-			"email",
-			"extension=php_openssl",
-			"ng-click=\"menu",
-			"ng-class=\"",
-			"uploads",
-			"public/uploads",
-			"/public/uploads",
-			".post",
-			"'.mainSection'",
-			"true",
-			"TRUE",
-			"append",
-			"');\n",
-			"mainSection",
-			"contenidoHome",
-			"alert",
-			"var n",
-			"n",
-			"true",
-			"false",
-			"generate",
-			"public/images/user2-160x160.jpg",
-			"dropdown tasks-menu",
-			"user-panel",
-			"echo",
-			"app",
-			"user-image",
-			"{{homeCtrl.language.labels.title}}",
-			"loginDatos",
-			"hover",
-			"null",
-			"hook",
-			"controlador",
-			"method",
-			"redirect",
-			"data",
-			"200",
-			"example",
-			"audi",
-			"user",
-			"fechacreacion",
-			"foto",
-			"DateTime",
-			"date",
-			"nacimiento",
-			"fecha",
-			"date",
+			"el",
+			"Morris",
 			"password",
-			"secretPassw0rd",
-			"models",
-			"show_",
-			"show_errors",
-			"show_error",
 			"show",
-			"display_errors",
-			"error_rep",
-			"display_errors",
-			"file",
-			"images",
-			"ModelName",
-			"name=\"",
-			"\n",
-			" 	",
-			"colors",
-			"login-box-body",
-			"box-body",
-			"body",
-			"view",
-			"login",
-			"\n",
-			"title",
-			"homeCtrl",
-			"public/",
-			"key",
-			"hook",
-			"msg",
-			"popU",
-			"Home",
-			"active:menu.menuActive",
-			"dist/img",
-			"/dist/img",
-			"/dist/img/",
-			"style",
-			"bootstrap",
-			"Document",
-			"shop",
-			"Come raggiungere Sanremo"
+			"Widgets",
+			"foto",
+			"param1",
+			"md5",
+			"load",
+			"img",
+			"loading.gif",
+			"Email",
+			"foto",
+			"required",
+			"Registrar",
+			"src",
+			"script",
+			"lento",
+			"movil"
 		],
-		"highlight": false,
+		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
-			"public/images",
-			"#e8e8e8"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -745,35 +230,33 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "application/controllers/exp.php",
+					"file": "application/libraries/Doctrine.php",
 					"settings":
 					{
-						"buffer_size": 20644,
+						"buffer_size": 2351,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								587,
-								587
+								1790,
+								1790
 							]
 						],
 						"settings":
 						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 495.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -783,266 +266,47 @@
 					"file": "application/models/Entities/User.php",
 					"settings":
 					{
-						"buffer_size": 6253,
+						"buffer_size": 6263,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								351,
-								351
-							],
-							[
-								492,
-								492
-							],
-							[
-								633,
-								633
-							],
-							[
-								781,
-								781
-							],
-							[
-								938,
-								938
-							],
-							[
-								1092,
-								1092
-							],
-							[
-								1248,
-								1248
-							],
-							[
-								1524,
-								1524
-							],
-							[
-								1672,
-								1672
-							],
-							[
-								1956,
-								1956
+								1825,
+								1825
 							]
 						],
 						"settings":
 						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 945.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "application/controllers/admin.php",
 					"settings":
 					{
-						"buffer_size": 6144,
+						"buffer_size": 253,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								619,
-								619
+								253,
+								253
 							]
 						],
 						"settings":
 						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1554.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "application/views/allExp.php",
-					"settings":
-					{
-						"buffer_size": 905,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								896,
-								896
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "application/views/perfilusuario.php",
-					"settings":
-					{
-						"buffer_size": 4704,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3166,
-								3166
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 294.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "application/views/index2.php",
-					"settings":
-					{
-						"buffer_size": 10168,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6161,
-								6161
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1854.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "application/views/register.php",
-					"settings":
-					{
-						"buffer_size": 4731,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4368,
-								4280
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 840.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "public/js/js.js",
-					"settings":
-					{
-						"buffer_size": 4184,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1443,
-								1443
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 336.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"settings":
-					{
-						"buffer_size": 446,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								446,
-								446
-							]
-						],
-						"settings":
-						{
-							"auto_name": "administrador",
-							"incomplete_sync": null,
+							"auto_name": "Carta para mi esposa",
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -1050,37 +314,108 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 9,
+					"buffer": 3,
+					"file": "application/views/index2.php",
 					"settings":
 					{
-						"buffer_size": 3319,
+						"buffer_size": 8337,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								176,
+								5968,
+								5968
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2700.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/E/Descargas/AdminLTE-2.1.0/AdminLTE-2.1.0/pages/tables/data.html",
+					"settings":
+					{
+						"buffer_size": 63622,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
 								0
 							]
 						],
 						"settings":
 						{
-							"auto_name": "1- Todos los titulares naranjas que salen arriba a",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 22305.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "application/controllers/admin.php",
+					"settings":
+					{
+						"buffer_size": 5871,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1079,
+								1079
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 347.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "application/views/dashboard.php",
+					"settings":
+					{
+						"buffer_size": 16,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16,
+								16
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1089,31 +424,82 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "requerimientos travel tale",
+					"buffer": 7,
+					"file": "application/views/register.php",
 					"settings":
 					{
-						"buffer_size": 838,
+						"buffer_size": 4536,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								332,
-								332
+								2824,
+								2824
 							]
 						],
 						"settings":
 						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 42.0,
+						"translation.y": 450.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "public/js/Admin.js",
+					"settings":
+					{
+						"buffer_size": 1831,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1663,
+								1663
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 495.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "public/js/js.js",
+					"settings":
+					{
+						"buffer_size": 4183,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3136,
+								3136
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1530.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1138,18 +524,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.964028776978,
 			1.0
 		],
 		"rows":
@@ -1159,21 +538,9 @@
 		]
 	},
 	"menu_visible": true,
-	"output.exec":
-	{
-		"height": 124.0
-	},
-	"output.git":
-	{
-		"height": 100.0
-	},
-	"output.sftp":
-	{
-		"height": 124.0
-	},
 	"replace":
 	{
-		"height": 64.0
+		"height": 0.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1186,20 +553,16 @@
 	},
 	"select_project":
 	{
-		"height": 500.0,
+		"height": 0.0,
 		"selected_items":
 		[
-			[
-				"",
-				"/C/xampp/htdocs/travelTale/travelTale.sublime-project"
-			]
 		],
-		"width": 380.0
+		"width": 0.0
 	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 180.0,
+	"side_bar_width": 150.0,
 	"status_bar_visible": true
 }

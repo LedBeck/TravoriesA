@@ -24,7 +24,7 @@
 		<h3 class="box-title">Nueva Experiencia</h3>
 	</div><!-- /.box-header -->
 	<!-- form start -->
-	<form role="form" enctype="multipart/form-data" id="register">
+	<form role="form" enctype="multipart/form-data" action="<?php echo base_url() ?>exp/add/1" id="register">
 		<div class="box-body col-sm-12">
 			<div class="col-sm-6">
 				<div class="form-group">
@@ -167,6 +167,47 @@ $('input[name="foto"],[name="fotoPrincipal"]').fileinput({
 });
 $('[data-editor]').wysihtml5();
 $('input[data-sugerido="1"]').tagsinput();
+$('#register').on('submit',function(evt){
+	evt.preventDefault();
+	var postData = new FormData();
+	var filePrincipal = $('[name="fotoPrincipal"]').prop('files')[0];
+	var files = $('[name="foto"]').prop('files');
+	console.log(files);
+	postData.append('image', filePrincipal);
+	for (var i = 0; i < files.length; i++) {
+		postData.append('galeria'+i,files[i]);
+	};
+	console.log(postData);
+	// return false;
+
+	$('input[type="email"],input[type="text"],input[type="password"],input[type="hidden"]').each(function(index, el) {
+		postData.append(el.name, el.value.trim());
+	});
+
+	$.ajax({
+		url: $('#register').attr('action'),
+		type: "POST",
+		data: postData,
+		processData: false,
+		contentType: false,
+		success: function(data, textStatus, jqXHR) {
+			console.log(data);
+			if (typeof(data) == 'object') {
+				if (data.code == 200) {
+					window.location = data.url;
+				} else {
+					generate('top', data.msg, 'alert');
+				}
+			} else {
+				generate('top', 'Ya hay un usuario registrado con ese email, por favor agregue otro o solicite un nuevo password con el administrador.', 'alert');
+			}
+		},
+		error: function(jqXHR, textStatus, errorThrown) {
+			//if fails     
+		}
+	});
+	return false;
+})
 // $.getJSON(base_url+'exp/getCatalogo/religion', function(json, textStatus) {
 // 	// $('input[name="religion"]').tags({
 //  //        suggestions:,

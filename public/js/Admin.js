@@ -1,3 +1,14 @@
+function generate(layout, msg, type) {
+	var n = noty({
+		text: msg,
+		type: 'alert',
+		// dismissQueue: true,
+		timeout: '2000',
+		layout: 'top',
+		theme: 'defaultTheme'
+	});
+	console.log('html: ' + n.options.id);
+}
 var tools = {
 	notificacion: function(layout, msg, type) {
 		var n = noty({
